@@ -8,14 +8,16 @@
   <header class="pink-header">
     <div class="pink-header__wrapper">
       <nav class="popup-menu">
-        <img class="popup-menu__logo" src="#" width="" height="" alt="Логотип PINK">
-        <a class="popup-menu__hamburger popup-menu__hamburger--active">
-          <span class="popup-menu__hamburger-menu popup-menu__hamburger-menu--cross"></span>
+        <a class="popup-menu__logo-link">
+          <img class="popup-menu__logo" src="#" width="" height="" alt="Логотип PINK">
         </a>
+        <button class="popup-menu__hamburger popup-menu__hamburger--active" type="button">
+          <span class="popup-menu__hamburger-menu popup-menu__hamburger-menu--cross"></span>
+        </button>
         <div class="popup-menu__wrapper">
           <ul class="popup-menu__list">
-            <li class="popup-menu__item"><a class="popup-menu__item-link" href="#">Главная</a></li>
-            <li class="popup-menu__item"><a class="popup-menu__item-link" href="#">Фотографии</a></li>
+            <li class="popup-menu__item"><a class="popup-menu__item-link popup-menu__item-link--active">Главная</a></li>
+            <li class="popup-menu__item"><a class="popup-menu__item-link" href="photo.html" target"_blank">Фотографии</a></li>
             <li class="popup-menu__item"><a class="popup-menu__item-link" href="#">Конкурс</a></li>
             <li class="popup-menu__item"><a class="popup-menu__item-link" href="#">Html Academy</a></li>
           </ul>
@@ -25,6 +27,7 @@
   </header>
   <main class="pink-main">
     <section class="application">
+      <h1 class="visually-hidden">Представляем наше приложение - PINK</h1>
       <section class="telephone-in-hand">
         <h2 class="visually-hidden">Демонстрация фильтра на фотографии</h2>
         <img class="telephone-in-hand__img" src="#" width="" height="" alt="Применение фильтра на фото">
@@ -34,9 +37,9 @@
         <div class="application__wrapper">
           <a class="application__button-download" href="#">Скачать приложение</a>
           <ul class="application__list-os">
-            <li class="application__item"><a class="application__item-link" href="#"><img class="application__item-img" src="#" width="" height="" alt="iOS"></a></li>
-            <li class="application__item"><a class="application__item-link" href="#"><img class="application__item-img" src="#" width="" height="" alt="Android"></a></li>
-            <li class="application__item"><a class="application__item-link" href="#"><img class="application__item-img" src="#" width="" height="" alt="Windows"></a></li>
+            <li class="application__item"><a class="application__item-link" href="#"></a></li>
+            <li class="application__item"><a class="application__item-link" href="#"></a></li>
+            <li class="application__item"><a class="application__item-link" href="#"></a></li>
           </ul>
           <p class="application__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -62,7 +65,7 @@
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
       <div class="reviews__wrapper">
-        <h3 class="reviews__name">Николай Петров</h3>
+        <cite class="reviews__name">Николай Петров</cite>
         <blockquote class="reviews__comment">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
         <p class="reviews__slider slider">
           <button class="slider__button slider__button--active" type="button">1</button>
@@ -73,23 +76,20 @@
     </section>
     <section class="tariff-plan">
       <div class="tariff-plan__wrapper">
-        <section class="tariff-plan__standart tariff-plan__standart--hit">
-          <h2 class="tariff-plan__name">Стандарт</h2>
-          <p class="tariff-plan__price">3,99 usd</p>
-        </section>
         <section class="tariff-plan__features">
           <table class="tariff-plan__table">
-            <tr class="tariff-plan__first-row">
+            <tr class="tariff-plan__standart tariff-plan__standart--hit">
+              <th class="tariff-plan__name">Стандарт</th>
+              <td>3,99 usd</td>
+            </tr>
+            <tr class="tariff-plan__row">
               <td class="tariff-plan__cell">Розовый фильтр</td>
-              <td class="tariff-plan__cell"><img class="tariff-plan__check-mark" src="#" width="" height="" alt="Присутствует"></td>
             </tr>
-            <tr class="tariff-plan__second-row">
+            <tr class="tariff-plan__row">
               <td class="tariff-plan__cell">Смайлики</td>
-              <td class="tariff-plan__cell"><img class="tariff-plan__check-mark" src="#" width="" height="" alt="Присутствует"></td>
             </tr>
-            <tr class="tariff-plan__third-row">
+            <tr class="tariff-plan__row">
               <td class="tariff-plan__cell">Комментарии</td>
-              <td class="tariff-plan__cell"><img class="tariff-plan__cross-mark" src="#" width="" height="" alt="Отсутствует"></td>
             </tr>
           </table>
           <p class="tariff-plan__slider slider">
@@ -100,22 +100,56 @@
         </section>
       </div>
     </section>
-  </main>
-  <footer class="pink-footer">
-    <section class="contacts">
-      <h2 class="visually-hidden">Как с нами связаться</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts-contact-us">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item"><span class="contacts__item--bold">Звоните:</span>+7(812)555-66-66</li>
-          <li class="contacts__item"><span class="contacts__item--bold">Пишите:</span>mail@htmlacademy.ru</li>
-          <li class="contacts__item"><span class="contacts__item--bold">Приезжайте в гости:</span>ул. Большая Конюшенная, 19/8</li>
-        </ul>
-      </div>
+    <section class="information">
+      <section class="information__contacts">
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <div class="information__wrapper">
+          <p class="information__contact-us">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="information__contacts-list">
+            <li class="information__contact-item"><span class="information__contact-item-bold">Звоните:</span><a class="information__contact-item-tel-link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a></li>
+            <li class="information__contact-item"><span class="information__contact-item-bold">Пишите:</span><a class="information__contact-item-mail-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+            <li class="information__contact-item"><span class="information__contact-item-bold">Приезжайте в гости:</span>ул. Большая Конюшенная, 19/8</li>
+          </ul>
+        </div>
+      </section>
+      <section class="information__map">
+        <h2 class="visually-hidden">Наше месторасположение</h2>
+        <img class="information__map-img" src="#" width="" height="" alt="Где мы находимся">
+      </section>
     </section>
-    <section class="map">
-      <h2 class="visually-hidden">Наше месторасположение</h2>
-      <img class="map__img" src="#" width="" height="" alt="Где мы находимся">
+  </main>
+  <footer class="pink-footer pink-footer--hidden">
+    <section class="pink-footer__wrapper">
+      <section class="pink-footer__logo-container">
+        <img class="pink-footer__logo-pink" src="#" width="" height="" alt="Логотип Pink">
+      </section>
+      <section class="pink-footer__social-contacts">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="pink-footer__social-list">
+          <li class="pink-footer__social-item">
+            <a class="pink-footer__social-item-link" href="#">
+              <img class="pink-footer__social-icon-twitter" src="#" width="" height="" alt="Twitter">
+            </a>
+          </li>
+          <li class="pink-footer__social-item">
+            <a class="pink-footer__social-item-link" href="#">
+              <img class="pink-footer__social-icon-facebook" src="#" width="" height="" alt="Facebook">
+            </a>
+          </li>
+          <li class="pink-footer__social-item">
+            <a class="pink-footer__social-item-link" href="#">
+              <img class="pink-footer__social-icon-youtube" src="#" width="" height="" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="pink-footer__developed-section">
+        <p class="pink-footer__developed-by">Разработано
+          <a class="pink-footer__developer-link" href="https://htmlacademy.ru/">
+            <img class="pink-footer__developer-logo" src="#" width="" height="" alt="Логотип Html Academy">
+          </a>
+        </p>
+      </section>
     </section>
   </footer>
 </body>

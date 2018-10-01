@@ -16,10 +16,10 @@
         </button>
         <div class="popup-menu__wrapper">
           <ul class="popup-menu__list">
-            <li class="popup-menu__item"><a class="popup-menu__item-link" href="index.html" target="_blank">Главная</a></li>
+            <li class="popup-menu__item"><a class="popup-menu__item-link" href="index.html">Главная</a></li>
             <li class="popup-menu__item"><a class="popup-menu__item-link popup-menu__item-link--active">Фотографии</a></li>
-            <li class="popup-menu__item"><a class="popup-menu__item-link" href="form.html" target="_blank">Конкурс</a></li>
-            <li class="popup-menu__item"><a class="popup-menu__item-link" href="https://htmlacademy.ru/">Html Academy</a></li>
+            <li class="popup-menu__item"><a class="popup-menu__item-link" href="form.html">Конкурс</a></li>
+            <li class="popup-menu__item"><a class="popup-menu__item-link" href="https://htmlacademy.ru/" target="_blank">Html Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -34,7 +34,7 @@
         <p class="bait-section__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
     </section>
-    <section class="users-posts">
+    <section class="pink-main__users-posts">
       <h2 class="visually-hidden">Опубликованные посты наших пользователей</h2>
       <div class="user-post user-post--all-width">
         <section class="user-post__photo-container user-post__photo-container--panorama-day">
@@ -51,7 +51,7 @@
           </div>
         </section>
       </div>
-      <section class="user-post user-post--wrapper">
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -65,8 +65,8 @@
             <a class="user-post__likes" href="#">Нравится: 356</a>
           </section>
         </section>
-      </section>
-      <section class="user-post user-post--wrapper">
+      </div>
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -80,8 +80,8 @@
             <a class="user-post__likes" href="#">Нравится: 666</a>
           </section>
         </section>
-      </section>
-      <section class="user-post user-post--wrapper">
+      </div>
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -95,8 +95,8 @@
             <a class="user-post__likes" href="#">Нравится: 215</a>
           </section>
         </section>
-      </section>
-      <section class="user-post user-post--wrapper">
+      </div>
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -110,8 +110,8 @@
             <a class="user-post__likes" href="#">Нравится: 4</a>
           </section>
         </section>
-      </section>
-      <section class="user-post user-post--wrapper">
+      </div>
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -125,8 +125,8 @@
             <a class="user-post__likes" href="#">Нравится: 150</a>
           </section>
         </section>
-      </section>
-      <section class="user-post user-post--wrapper">
+      </div>
+      <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link user-post__link--full-size" href="#">
             <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
@@ -140,7 +140,7 @@
             <a class="user-post__likes" href="#">Нравится: 2560</a>
           </section>
         </section>
-      </section>
+      </div>
       <section class="bait-section">
         <section class="bait-section__wrapper">
           <p class="bait-section__text">Затмните их всех! Выкладывайте все, что накопилось в телефоне!</p>
@@ -159,23 +159,14 @@
             <h2 class="visually-hidden">Меню фильтров</h2>
             <fieldset class="try-to-post__filters">
               <ul class="try-to-post__filters-list">
-                <li class="try-to-post__item-radio">
-                  <label class="try-to-post__radio-container">
-                    <input class="try-to-post__radio-button try-to-post__radio-button--checked" type="radio" name="filter-group" checked>
-                    <span class="try-to-post__radio-button-icon"></span>
-                  </label>
+                <li class="try-to-post__item-button">
+                  <button class="try-to-post__button try-to-post__button-crop" type="button"></button>
                 </li>
-                <li class="try-to-post__item-radio">
-                  <label class="try-to-post__radio-container">
-                    <input class="try-to-post__radio-button try-to-post__radio-button--checked" type="radio" name="filter-group" checked>
-                    <span class="try-to-post__radio-button-icon"></span>
-                  </label>
+                <li class="try-to-post__item-button">
+                  <button class="try-to-post__button try-to-post__button-fill" type="button"></button>
                 </li>
-                <li class="try-to-post__item-radio">
-                  <label class="try-to-post__radio-container">
-                    <input class="try-to-post__radio-button try-to-post__radio-button--checked" type="radio" name="filter-group" checked>
-                    <span class="try-to-post__radio-button-icon"></span>
-                  </label>
+                <li class="try-to-post__item-button">
+                  <button class="try-to-post__button try-to-post__button-contrast" type="button"></button>
                 </li>
               </ul>
             </fieldset>

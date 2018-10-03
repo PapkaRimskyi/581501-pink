@@ -1,0 +1,20 @@
+.popup-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.popup-menu__container {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-menu__logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.popup-menu__wrapper {
+  display: none;
+}

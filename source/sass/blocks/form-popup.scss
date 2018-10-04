@@ -1,7 +1,7 @@
 .form-popup {
   width: 320px;
   background-color: #ffffff;
-  box-shadow: -5px 5px 15px 0px #dfdfdf;
+  box-shadow: -5px 5px 15px 0 #dfdfdf;
 }
 
 .form-popup__wrapper {
@@ -10,7 +10,6 @@
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-
 }
 
 .form-popup__header {

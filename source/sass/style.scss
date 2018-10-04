@@ -1,54 +1,16 @@
-@font-face {
-  font-family: "opensans";
-  src: url("../fonts/opensans.woff") format("woff"),
-  url("../fonts/opensans.woff2") format("woff2");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "opensansbold";
-  src: url("../fonts/opensansbold.woff") format("woff"),
-  url("../fonts/opensansbold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "opensanslight";
-  src: url("../fonts/opensanslight.woff") format("woff"),
-  url("../fonts/opensanslight.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-}
-
-body {
-  font-family: "opensans", "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 500;
-  color: #283645;
-  background-color: #ffffff;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "pink-header.scss";
-@import "popup-menu.scss";
-@import "pink-main.scss";
-@import "application.scss";
-@import "telephone-in-hand.scss";
-@import "advantages.scss";
-@import "reviews.scss";
-@import "tariff-plan.scss";
-@import "information.scss";
-@import "pink-footer.scss";
+@import "global.scss";
+@import "blocks/pink-header.scss";
+@import "blocks/popup-menu.scss";
+@import "blocks/pink-main.scss";
+@import "blocks/application.scss";
+@import "blocks/telephone-in-hand.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/tariff-plan.scss";
+@import "blocks/information.scss";
+@import "blocks/pink-footer.scss";
+@import "blocks/social-contacts.scss";
+@import "blocks/page-headline.scss";
+@import "blocks/bait-section.scss";
+@import "blocks/user-post.scss";
+@import "blocks/try-to-post.scss";

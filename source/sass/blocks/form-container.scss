@@ -1,0 +1,36 @@
+.form-container {
+  background-color: #ffffff;
+}
+
+.form-container__conditions-text {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  display: flex;
+  font-size: 14px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.form-container__submit {
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  border: none;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.form-container__required-input {
+  width: 180px;
+  display: flex;
+  margin: 0 auto;
+  font-size: 14px;
+  text-transform: uppercase;
+}

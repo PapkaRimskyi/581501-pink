@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Раздел фотографий</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="pink-header">
     <div class="pink-header__wrapper">
       <nav class="popup-menu">
-        <a class="popup-menu__logo-link" href="index.html">
-          <img class="popup-menu__logo" src="#" width="" height="" alt="Логотип PINK">
-        </a>
-        <button class="popup-menu__hamburger popup-menu__hamburger--active" type="button">
-          <span class="popup-menu__hamburger-menu popup-menu__hamburger-menu--cross"></span>
-        </button>
-        <div class="popup-menu__wrapper">
+        <div class="popup-menu__container">
+          <a class="popup-menu__logo-link" href="index.html">
+            <img class="popup-menu__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип PINK">
+          </a>
+          <button class="popup-menu__hamburger popup-menu__hamburger--active" type="button">
+            <span class="popup-menu__hamburger-menu popup-menu__hamburger-menu--cross">Меню</span>
+          </button>
+        </div>
+        <div class="popup-menu__wrapper popup-menu__wrapper--display-none">
           <ul class="popup-menu__list">
             <li class="popup-menu__item"><a class="popup-menu__item-link" href="index.html">Главная</a></li>
             <li class="popup-menu__item"><a class="popup-menu__item-link popup-menu__item-link--active">Фотографии</a></li>
@@ -31,7 +34,7 @@
     </section>
     <section class="bait-section">
       <div class="bait-section__wrapper">
-        <p class="bait-section__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="bait-section__text">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?</p>
       </div>
     </section>
     <section class="pink-main__users-posts">
@@ -39,14 +42,17 @@
       <div class="user-post user-post--all-width">
         <section class="user-post__photo-container user-post__photo-container--panorama-day">
           <a class="user-post__link user-post__link--full-size" href="#">
-            <img class="user-post__photo-img user-post__photo-img--full-size" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img user-post__photo-img--full-size" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя">
           </a>
         </section>
-        <section class="user-post__container-text">
+        <section class="user-post__container-text user-post__container-text--margin">
           <h2 class="visually-hidden">Комментарий автора</h2>
           <div class="user-post__text-centerer">
-            <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Анна</cite><span class="user-post__post-time"> (5 минут назад)</span></p>
-            <blockquote class="user-post__user-comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+            <p class="user-post__user-name-and-post-time">
+              <cite class="user-post__user-name">Анна</cite>
+              <span class="user-post__post-time"> (5 минут назад)</span>
+            </p>
+            <blockquote class="user-post__user-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
             <a class="user-post__likes" href="#">Нравится: 215</a>
           </div>
         </section>
@@ -54,12 +60,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Левон</cite><span class="user-post__post-time"> (5 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
             <a class="user-post__likes" href="#">Нравится: 356</a>
@@ -69,12 +75,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Антон</cite><span class="user-post__post-time"> (12 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Соседи будут рады!</blockquote>
             <a class="user-post__likes" href="#">Нравится: 666</a>
@@ -84,12 +90,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Борис</cite><span class="user-post__post-time"> (20 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
             <a class="user-post__likes" href="#">Нравится: 215</a>
@@ -99,12 +105,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Сергей</cite><span class="user-post__post-time"> (25 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Самая кубанская в мире!</blockquote>
             <a class="user-post__likes" href="#">Нравится: 4</a>
@@ -114,12 +120,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Максим</cite><span class="user-post__post-time"> (40 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Где снег-то?</blockquote>
             <a class="user-post__likes" href="#">Нравится: 150</a>
@@ -129,12 +135,12 @@
       <div class="user-post user-post--wrapper">
         <section class="user-post__photo-container">
           <a class="user-post__link" href="#">
-            <img class="user-post__photo-img" src="#" width="" height="" alt="Фотография пользователя">
+            <img class="user-post__photo-img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
         </section>
         <section class="user-post__container-text">
           <h2 class="visually-hidden">Комментарий автора</h2>
-          <section class="user-post_text-centerer">
+          <section class="user-post__text-centerer">
             <p class="user-post__user-name-and-post-time"><cite class="user-post__user-name">Надежда</cite><span class="user-post__post-time"> (45 часов назад)</span></p>
             <blockquote class="user-post__user-comment">Всем GM и взаимные лайки!</blockquote>
             <a class="user-post__likes" href="#">Нравится: 2560</a>
@@ -142,8 +148,8 @@
         </section>
       </div>
       <section class="bait-section">
-        <section class="bait-section__wrapper">
-          <p class="bait-section__text">Затмните их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <section class="bait-section__wrapper bait-section__wrapper--bottom">
+          <p class="bait-section__text">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в телефоне!</p>
         </section>
       </section>
     </section>
@@ -153,7 +159,7 @@
         <form class="try-to-post__post" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
           <section class="try-to-post__photo-container">
             <h2 class="visually-hidden">Запостите что-нибудь!</h2>
-            <img class="try-to-post__photo" src="#" width="" height="" alt="Фотография">
+            <img class="try-to-post__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография">
           </section>
           <section class="try-to-post__settings-menu">
             <h2 class="visually-hidden">Меню фильтров</h2>
@@ -183,24 +189,33 @@
   <footer class="pink-footer">
     <section class="pink-footer__wrapper">
       <section class="pink-footer__logo-container">
-        <img class="pink-footer__logo-pink" src="#" width="" height="" alt="Логотип Pink">
+        <img class="pink-footer__logo-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
       </section>
-      <section class="pink-footer__social-contacts">
+      <section class="pink-footer__social social-contacts">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="pink-footer__social-list">
-          <li class="pink-footer__social-item">
-            <a class="pink-footer__social-item-link" href="#">
-              <img class="pink-footer__social-icon-twitter" src="#" width="" height="" alt="Twitter">
+        <ul class="social-contacts__social-list">
+          <li class="social-contacts__social-item">
+            <a class="social-contacts__social-item-link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="social-contacts__svg-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+              </svg>
             </a>
           </li>
-          <li class="pink-footer__social-item">
-            <a class="pink-footer__social-item-link" href="#">
-              <img class="pink-footer__social-icon-facebook" src="#" width="" height="" alt="Facebook">
+          <li class="social-contacts__social-item">
+            <a class="social-contacts__social-item-link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="social-contacts__svg-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+                <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+              </svg>
             </a>
           </li>
-          <li class="pink-footer__social-item">
-            <a class="pink-footer__social-item-link" href="#">
-              <img class="pink-footer__social-icon-youtube" src="#" width="" height="" alt="Youtube">
+          <li class="social-contacts__social-item">
+            <a class="social-contacts__social-item-link" href="#">
+              <span class="visually-hidden">YouTube</span>
+              <svg class="social-contacts__svg-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+                <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -208,7 +223,10 @@
       <section class="pink-footer__developed-section">
         <p class="pink-footer__developed-by">Разработано
           <a class="pink-footer__developer-link" href="https://htmlacademy.ru/">
-            <img class="pink-footer__developer-logo" src="#" width="" height="" alt="Логотип Html Academy">
+            <span class="visually-hidden">Логотип Html Academy</span>
+            <svg class="pink-footer__html-logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
           </a>
         </p>
       </section>

@@ -1,0 +1,22 @@
+.social-contacts__social-list {
+  width: 179px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.social-contacts__social-item-link {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}
+
+.social-contacts__svg-icon {
+  fill: #d22856;
+}

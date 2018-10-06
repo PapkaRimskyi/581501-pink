@@ -64,6 +64,7 @@
 
 .user-post__post-time {
   font-size: 12px;
+  font-weight: 300;
   color: #5e6873;
   text-transform: uppercase;
 }
@@ -85,7 +86,7 @@
 .user-post__likes::before {
   width: 13px;
   height: 12px;
-  right: 108px;
+  left: 0;
   top: 3px;
   content: "";
   position: absolute;

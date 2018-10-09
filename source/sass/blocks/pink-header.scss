@@ -1,11 +1,172 @@
 .pink-header {
+  margin: $margin-auto;
   width: 320px;
-  background-color: rgba(29, 38, 49, 0.3);
+  background-color: #283645;
 }
 
-.pink-header__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+.header-nav {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__logo-link {
+  display: flex;
+  height: 22px;
+}
+
+.header-nav__logo--desktop {
+  display: none;
+}
+
+.header-nav__logo--tablet {
+  display: none;
+}
+
+.header-nav__open-button--cross {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-nav__menu-container {
+  width: 280px;
+}
+
+.header-nav__menu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.header-nav__item {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  width: 280px;
+  text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.header-nav__item-link {
+  color: #ffffff;
+  line-height: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .pink-header {
+    width: 660px;
+  }
+
+  .header-nav {
+    width: 620px;
+  }
+
+  .header-nav__container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 620px;
+    align-items: flex-end;
+  }
+
+  .header-nav__logo-link {
+    height: 40px;
+  }
+
+  .header-nav__logo--desktop {
+    display: none;
+  }
+
+  .header-nav__logo--mobile {
+    display: none;
+  }
+
+  .header-nav__logo--tablet {
+    display: flex;
+  }
+
+  .header-nav__menu-container {
+    width: 620px;
+  }
+
+  .header-nav__item {
+    padding-bottom: 15px;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pink-header {
+    width: 1200px;
+  }
+
+  .pink-header--bg {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .container-margin {
+    margin-left: $desktop-margin;
+    margin-right: $desktop-margin;
+  }
+
+  .header-nav {
+    width: 940px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-nav__container {
+    width: 150px;
+  }
+
+  .header-nav__logo--mobile {
+    display: none;
+  }
+
+  .header-nav__logo--tablet {
+    display: none;
+  }
+
+  .header-nav__logo--desktop {
+    display: flex;
+  }
+
+  .header-nav__open-button--desktop-hidden {
+    display: none;
+  }
+
+  .header-nav__menu-container {
+    width: 622px;
+  }
+
+  .header-nav__menu-list {
+    justify-content: space-between;
+  }
+
+  .header-nav__item {
+    display: flex;
+    width: auto;
+    border: none;
+  }
+
+  .header-nav__item-link {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

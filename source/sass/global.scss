@@ -20,7 +20,7 @@
 }
 
 body {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "opensans", "Roboto", sans-serif;
   font-size: 18px;
@@ -28,6 +28,18 @@ body {
   font-weight: 400;
   color: #283645;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: $desktop-width;
+  }
 }
 
 .visually-hidden {
@@ -39,4 +51,9 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container-margin {
+  margin-left: $container-margin;
+  margin-right: $container-margin;
 }

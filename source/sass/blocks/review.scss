@@ -1,0 +1,165 @@
+.review {
+  padding-top: 40px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+}
+
+.review__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__button {
+  display: none;
+}
+
+.review__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review__text-container--hidden {
+  display: none;
+}
+
+.review__author {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+  color: #000000;
+}
+
+.review__author-years-job {
+  display: none;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.review__slider-container {
+  margin: 0;
+  padding-bottom: 43px;
+}
+
+// .review__slider-button:hover {
+//   background-color: rgba(40, 54, 69, 0.6);
+// }
+//
+// .review__slider-button:active {
+//   background-color: rgba(40, 54, 69, 0.1);
+// }
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  .review__author {
+    margin-bottom: 38px;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    order: 2;
+  }
+
+  .review__text {
+    font-size: 18px;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .review__slider-container {
+    padding-bottom: 22px;
+    order: 3;
+  }
+
+  .review__author-years-job {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    position: relative;
+    padding-top: 185px;
+    padding-bottom: 4px;
+  }
+
+  .review::before {
+    position: absolute;
+    width: 100%;
+    height: 63px;
+    content: "";
+    top: 70px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .review__container {
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .review__button {
+    margin-top: 25px;
+    display: block;
+    border: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .review__button--previous {
+    margin-left: 54px;
+  }
+
+  .review__button--next {
+    margin-right: 54px;
+  }
+
+  .review__button-arrow {
+    opacity: 0.3;
+  }
+
+  .review__button-arrow:hover {
+    opacity: 0.6;
+  }
+
+  .review__button-arrow:active {
+    opacity: 0.1;
+  }
+
+  .review__text-container {
+    width: 685px;
+  }
+
+  .review .review__slider-container {
+    display: none;
+  }
+
+  .review__author {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .review__author-years-job {
+    font-size: 18px;
+  }
+}

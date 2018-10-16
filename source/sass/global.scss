@@ -20,7 +20,7 @@
 }
 
 body {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "opensans", "Roboto", sans-serif;
   font-size: 18px;
@@ -39,4 +39,14 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container-margin {
+  margin-left: $container-margin;
+  margin-right: $container-margin;
+}
+
+.container-padding {
+  padding-left: 20px;
+  padding-right: 20px;
 }

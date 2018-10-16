@@ -1,0 +1,132 @@
+.advantages .research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages .research {
+    position: relative;
+    padding-top: 68px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+  }
+
+  .research::before {
+    position: absolute;
+    content: "";
+    top: 60px;
+    left: 20px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .research::after {
+    position: absolute;
+    content: "24";
+    top: 115px;
+    left: 39px;
+    width: 202px;
+    height: 202px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 96px;
+    line-height: 180px;
+    color: #d22856;
+    font-weight: 700;
+  }
+
+  .research__text-container {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research__paragraph-caption {
+    margin-bottom: 0;
+    width: 170px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .research__paragraph {
+    width: 298px;
+    margin-bottom: 11px;
+  }
+
+  .research__paragraph-link {
+    color: #dd5d80;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages .research {
+    margin: 0 auto;
+    padding-top: 87px;
+    padding-bottom: 115px;
+    width: 900px;
+    background-color: #f2f2f2;
+  }
+
+  .research::before {
+    position: absolute;
+    content: "";
+    top: 25px;
+    left: 0;
+    width: 298px;
+    height: 345px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .research::after {
+    position: absolute;
+    content: "24";
+    top: 94px;
+    left: 23px;
+    width: 253px;
+    height: 253px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 120px;
+    line-height: 240px;
+    color: #d22856;
+    font-weight: 700;
+  }
+
+  .research__text-container {
+    padding-right: 27px;
+    width: 526px;
+  }
+
+  .research__paragraph-caption {
+    margin-bottom: 8px;
+    width: 300px;
+  }
+
+  .research__paragraph {
+    margin-bottom: 38px;
+    width: 520px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .research__paragraph-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

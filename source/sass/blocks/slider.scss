@@ -1,0 +1,28 @@
+.slider {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__button {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+}
+
+.slider__button--active {
+  width: 6px;
+  height: 6px;
+  border: 3px solid #283645;
+  background-color: #ffffff;
+}
+
+.slider__button:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__button:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}

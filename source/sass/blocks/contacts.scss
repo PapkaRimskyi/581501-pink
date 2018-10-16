@@ -42,6 +42,16 @@
   text-align: center;
 }
 
+.contacts__item-link--modified:hover {
+  color: #283645;
+  border-bottom: 1px solid #283645;
+}
+
+.contacts__item-link--modified:active {
+  border: none;
+  color: rgba(40, 54, 69, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
   padding-bottom: 20px;

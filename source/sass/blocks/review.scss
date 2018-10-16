@@ -51,6 +51,14 @@
   padding-bottom: 43px;
 }
 
+// .review__slider-button:hover {
+//   background-color: rgba(40, 54, 69, 0.6);
+// }
+//
+// .review__slider-button:active {
+//   background-color: rgba(40, 54, 69, 0.1);
+// }
+
 @media (min-width: $tablet-width) {
   .review {
     padding-top: 65px;
@@ -115,6 +123,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-color: transparent;
+    cursor: pointer;
   }
 
   .review__button--previous {
@@ -125,15 +134,15 @@
     margin-right: 54px;
   }
 
-  .arrow {
+  .review__button-arrow {
     opacity: 0.3;
   }
 
-  .arrow:hover {
+  .review__button-arrow:hover {
     opacity: 0.6;
   }
 
-  .arrow:active {
+  .review__button-arrow:active {
     opacity: 0.1;
   }
 

@@ -6,9 +6,8 @@
 }
 
 .slider__button {
-  width: 4px;
-  height: 4px;
-  border: 1px solid rgba(40, 54, 69, 0.3);
+  width: 5px;
+  height: 5px;
   background-color: rgba(40, 54, 69, 0.3);
   border-radius: 50%;
 }
@@ -18,4 +17,12 @@
   height: 6px;
   border: 3px solid #283645;
   background-color: #ffffff;
+}
+
+.slider__button:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__button:active {
+  background-color: rgba(40, 54, 69, 0.1);
 }

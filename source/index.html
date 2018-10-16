@@ -109,18 +109,26 @@
         <div class="review__text-container">
           <cite class="review__author">Николай Петров<span class="review__author-years-job"> 25 лет, водитель трамвая</span></cite>
           <blockquote class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
-          <p class="review__slider-container slider">
-            <a class="review__slider-button slider__button slider__button--active" href="#">
-              <span class="visually-hidden">Первый отзыв</span>
-            </a>
-            <a class="review__slider-button slider__button" href="#">
-              <span class="visually-hidden">Второй отзыв</span>
-            </a>
-            <a class="review__slider-button slider__button" href="#">
-              <span class="visually-hidden">Третий отзыв</span>
-            </a>
-          </p>
         </div>
+        <div class="review__text-container review__text-container--hidden">
+          <cite class="review__author">Иван Иванов<span class="review__author-years-job"> 20 лет, космонавт</span></cite>
+          <blockquote class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+        </div>
+        <div class="review__text-container review__text-container--hidden">
+          <cite class="review__author">Петр Иванов<span class="review__author-years-job"> 19 лет, студент</span></cite>
+          <blockquote class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+        </div>
+        <p class="review__slider-container slider">
+          <a class="review__slider-button slider__button slider__button--active" href="#">
+            <span class="visually-hidden">Первый отзыв</span>
+          </a>
+          <a class="review__slider-button slider__button" href="#">
+            <span class="visually-hidden">Второй отзыв</span>
+          </a>
+          <a class="review__slider-button slider__button" href="#">
+            <span class="visually-hidden">Третий отзыв</span>
+          </a>
+        </p>
         <button class="review__button review__button--next" type="button">
           <span class="visually-hidden">Следующий отзыв</span>
           <svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
@@ -145,19 +153,19 @@
             </th>
           </tr>
           <tr class="tariff__row">
-            <td class="tariff__status-item tariff__item--mobile-hidden">Розовый фильтр</td>
+            <td class="tariff__status-item tariff__status-item--mobile-hidden">Розовый фильтр</td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
           </tr>
           <tr class="tariff__row">
-            <td class="tariff__status-item tariff__item--mobile-hidden">Смайлики</td>
+            <td class="tariff__status-item tariff__status-item--mobile-hidden">Смайлики</td>
             <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
           </tr>
           <tr class="tariff__row">
-            <td class="tariff__status-item tariff__item--mobile-hidden">Комментарии</td>
+            <td class="tariff__status-item tariff__status-item--mobile-hidden">Комментарии</td>
             <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
             <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
             <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
@@ -202,13 +210,15 @@
         <img class="map__item" src="img/bg-map-mobile@1x.png" alt="Логотип PINK">
       </picture>
     </section>
-    <footer class="pink-footer">
+    <footer class="pink-footer pink-footer--hidden-index">
       <div class="pink-footer__container">
         <section class="pink-footer__logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="pink-footer__logo-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-          </picture>
+          <a class="pink-footer__link">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img class="pink-footer__logo-pink" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+            </picture>
+          </a>
         </section>
         <section class="pink-footer__social social-contacts">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>

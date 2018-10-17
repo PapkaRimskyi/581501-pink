@@ -98,16 +98,20 @@
     padding: 22px 22px 20px 28px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   .post-container__comment-container--position {
     min-height: auto;
     position: relative;
     display: block;
+    flex-grow: 0;
   }
 
   .post-container {
     margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
   }
 
   .photo-section .post-container--all-width {
@@ -166,7 +170,8 @@
   }
 
   .post-container__wrapper-picture {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 

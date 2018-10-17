@@ -51,14 +51,6 @@
   padding-bottom: 43px;
 }
 
-// .review__slider-button:hover {
-//   background-color: rgba(40, 54, 69, 0.6);
-// }
-//
-// .review__slider-button:active {
-//   background-color: rgba(40, 54, 69, 0.1);
-// }
-
 @media (min-width: $tablet-width) {
   .review {
     padding-top: 65px;
@@ -135,6 +127,8 @@
   }
 
   .review__button-arrow {
+    width: 22px;
+    height: 41px;
     opacity: 0.3;
   }
 

@@ -86,6 +86,15 @@
   fill: #d22856;
 }
 
+.pink-footer__html-logo:hover {
+  fill: #283645;
+}
+
+.pink-footer__html-logo:active {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .pink-footer {
     margin: 0 auto;
@@ -143,6 +152,14 @@
     border-radius: 50%;
   }
 
+  .social-contacts__link:hover {
+    border-color: rgba(40, 54, 69, 1);
+  }
+
+  .social-contacts__link:active {
+    opacity: 0.1;
+  }
+
   .social-contacts__svg-icon {
     fill: #d22856;
   }
@@ -167,10 +184,6 @@
   .pink-footer__developer-link {
     display: inline-block;
     vertical-align: middle;
-  }
-
-  .pink-footer__html-logo {
-    fill: #d22856;
   }
 }
 

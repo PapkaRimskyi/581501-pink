@@ -40,6 +40,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  opacity: 0.3;
+  fill: #283645;
+}
+
+.photo-settings__button--active {
+  fill: #d22856;
+  opacity: 1;
+}
+
+.photo-settings__button:hover {
+  opacity: 0.5;
 }
 
 .photo-settings__range {

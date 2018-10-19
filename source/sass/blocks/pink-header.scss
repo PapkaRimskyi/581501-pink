@@ -38,11 +38,16 @@
   cursor: pointer;
 }
 
-.header-nav__open-button-icon:hover path {
-  fill: red;
+.header-nav__open-button-icon {
+  fill: #ffffff;
 }
 
-.header-nav__open-button-icon:active path {
+.header-nav__open-button-icon:hover {
+  fill: #d22856;
+}
+
+.header-nav__open-button-icon:active {
+  fill: #d22856;
   opacity: 0.3;
 }
 

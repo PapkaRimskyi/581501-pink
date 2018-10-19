@@ -116,6 +116,15 @@
     background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer;
+    opacity: 0.3;
+  }
+
+  .review__button:hover {
+    opacity: 0.6;
+  }
+
+  .review__button:active {
+    opacity: 0.1;
   }
 
   .review__button--previous {
@@ -129,15 +138,6 @@
   .review__button-arrow {
     width: 22px;
     height: 41px;
-    opacity: 0.3;
-  }
-
-  .review__button-arrow:hover {
-    opacity: 0.6;
-  }
-
-  .review__button-arrow:active {
-    opacity: 0.1;
   }
 
   .review__text-container {

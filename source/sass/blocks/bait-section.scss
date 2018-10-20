@@ -17,6 +17,15 @@
   padding-bottom: 42px;
 }
 
+.bait-section__paragraph--form-width {
+  padding-bottom: 34px;
+  width: 280px;
+}
+
+.bait-section__paragraph--form-hidden {
+  display: none;
+}
+/*
 @media (min-width: $tablet-width) {
   .bait-section__paragraph {
     padding-top: 92px;
@@ -29,8 +38,16 @@
     padding-top: 45px;
     padding-bottom: 68px;
   }
-}
 
+  .bait-section__paragraph--form-width {
+    width: 496px;
+  }
+
+  .bait-section__paragraph--form-hidden {
+    display: inline;
+  }
+}
+/*
 @media (min-width: $desktop-width) {
   .bait-section__paragraph {
     padding-bottom: 88px;
@@ -41,4 +58,9 @@
     padding-top: 6px;
     padding-bottom: 66px;
   }
+
+  .bait-section__paragraph--form-width {
+    width: 758px;
+  }
 }
+*/

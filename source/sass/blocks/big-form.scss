@@ -1,0 +1,238 @@
+.big-form {
+  margin-bottom: 17px;
+  background-color: #ffffff;
+}
+
+.big-form__fieldset {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  border: none;
+}
+
+.big-form__fieldset:last-of-type{
+  margin-bottom: 45px;
+}
+
+.big-form__fieldset--bg {
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+}
+
+.big-form__fieldset-wrapper {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.big-form__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.big-form__item {
+  margin-bottom: 17px;
+}
+
+.big-form__item--toggle-margin {
+  margin-bottom: 52px;
+}
+
+.big-form__item--toggle-margin:last-child {
+  margin-bottom: 47px;
+}
+
+.big-form__item--radio-margin {
+  margin-bottom: 45px;
+}
+
+.big-form__info {
+  padding-left: 22px;
+  padding-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #d22856;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.big-form__input-info {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  width: 280px;
+  font: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.big-form__input-info:hover {
+  border-color: #283645;
+}
+
+.big-form__input-info:focus {
+  border-color: #d22856;
+}
+
+.big-form__input-info::placeholder {
+  font-size: 18px;
+  color: #283645;
+}
+
+.big-form__legend {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 37px;
+  margin-bottom: 45px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  background-color: #f2f2f2;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.big-form__legend--margin {
+  margin-bottom: 40px;
+}
+
+.big-form__label-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.big-form__input-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.big-form__text {
+  position: relative;
+  padding-left: 70px;
+}
+
+.big-form__input-toggle-yes--hidden {
+  display: none;
+}
+
+.big-form__input-toggle + .big-form__text--checkbox::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  background-color: #ffffff;
+}
+
+.big-form__input-toggle:hover + .big-form__text--checkbox::before {
+  border-color: #283645;
+}
+
+.big-form__input-toggle:checked + .big-form__text--checkbox::before {
+  border-color: #d22856;
+}
+
+.big-form__input-toggle:checked ~ .big-form__input-toggle-yes {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  display: block;
+  fill: #d22856;
+}
+
+.big-form__input-toggle + .big-form__text--radio::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.big-form__input-toggle:hover + .big-form__text--radio::before,
+.big-form__input-toggle:checked + .big-form__text--radio::after {
+  border-color: #283645;
+}
+
+.big-form__input-toggle:checked + .big-form__text--radio::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: #d22856;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.big-form__legend--margin-bottom {
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.big-form__field-container {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.big-form__text-field {
+  padding: 16px 10px 30px 20px;
+  font: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  resize: vertical;
+}
+
+.big-form__text-field::placeholder {
+  color: #283645;
+}
+
+.big-form__submit {
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  border: none;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.big-form__required-input {
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.big-form__required-input sup {
+  padding-right: 2px;
+  color: #d8456d;
+}

@@ -54,6 +54,14 @@
   border-radius: 50%;
 }
 
+.social-contacts__link:hover {
+  border-color: rgba(40, 54, 69, 1);
+}
+
+.social-contacts__link:active {
+  opacity: 0.1;
+}
+
 .social-contacts__svg-icon {
   fill: #d22856;
 }
@@ -152,18 +160,6 @@
     border-radius: 50%;
   }
 
-  .social-contacts__link:hover {
-    border-color: rgba(40, 54, 69, 1);
-  }
-
-  .social-contacts__link:active {
-    opacity: 0.1;
-  }
-
-  .social-contacts__svg-icon {
-    fill: #d22856;
-  }
-
   .pink-footer__developed {
     display: flex;
     justify-content: center;
@@ -186,7 +182,7 @@
     vertical-align: middle;
   }
 }
-
+/*
 @media (min-width: $desktop-width) {
   .pink-footer {
     width: 100%;
@@ -223,3 +219,4 @@
     margin-top: 8px;
   }
 }
+*/

@@ -25,7 +25,7 @@
 .bait-section__paragraph--form-hidden {
   display: none;
 }
-/*
+
 @media (min-width: $tablet-width) {
   .bait-section__paragraph {
     padding-top: 92px;
@@ -40,6 +40,7 @@
   }
 
   .bait-section__paragraph--form-width {
+    padding-bottom: 70px;
     width: 496px;
   }
 

@@ -62,4 +62,29 @@
     margin: 0 auto;
     width: 320px;
   }
+
+  .form-popup__header {
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 218px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form-popup__main-text {
+    line-height: 24px;
+  }
+
+  .form-popup__button-container {
+    padding-top: 21px;
+  }
+
+  .form-popup__button-container--bg {
+    margin-top: 20px;
+    padding-top: 45px;
+  }
+
+  .form-popup__button {
+    width: 300px;
+  }
 }

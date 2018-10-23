@@ -88,3 +88,35 @@
     width: 300px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-popup {
+    width: 780px;
+  }
+
+  .form-popup__wrapper {
+    width: 400px;
+  }
+
+  .form-popup__header {
+    width: 400px;
+  }
+
+  .form-popup__main-text--desktop-padding {
+    padding-bottom: 47px;
+  }
+
+  .form-popup__button--width-desktop {
+    width: 460px;
+  }
+
+  .form-popup__button-container--bg {
+    margin-top: 25px;
+    padding-top: 48px;
+  }
+
+  .form-popup__button-container--desktop-bg {
+    padding-top: 47px;
+    background-color: #f2f2f2;
+  }
+}

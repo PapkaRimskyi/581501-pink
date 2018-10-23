@@ -262,6 +262,10 @@
   text-transform: uppercase;
 }
 
+.big-form__required-input--hidden {
+  display: none;
+}
+
 .big-form__required-input sup {
   padding-right: 2px;
   color: #d8456d;
@@ -449,5 +453,115 @@
 
   .big-form__required-input {
     padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .big-form__fieldset-order-container {
+    margin: 0 auto;
+    width: 940px;
+    justify-content: space-between;
+  }
+
+  .big-form__fieldset:first-of-type,
+  .big-form__fieldset:first-of-type .big-form__fieldset-wrapper,
+  .big-form__fieldset:nth-of-type(4),
+  .big-form__fieldset:nth-of-type(4) .big-form__fieldset-wrapper {
+    width: 436px;
+    margin: 0;
+  }
+
+  .big-form__fieldset:nth-of-type(3),
+  .big-form__fieldset:nth-of-type(2),
+  .big-form__fieldset:last-of-type,
+  .big-form__button-container {
+    margin-top: 58px;
+    margin-bottom: 0;
+    width: 940px;
+  }
+
+  .big-form__fieldset:nth-of-type(3) .big-form__fieldset-wrapper,
+  .big-form__fieldset:nth-of-type(2) .big-form__fieldset-wrapper,
+  .big-form__field-container {
+    margin: 0 auto;
+    width: 820px;
+  }
+
+  .big-form__fieldset-wrapper--padding-top {
+    padding-top: 33px;
+  }
+
+  .big-form__item--column {
+    margin-bottom: 13px;
+  }
+
+  .big-form__item--toggle-margin {
+    margin-bottom: 56px;
+  }
+
+  .big-form__fieldset:first-of-type {
+    padding-top: 10px;
+  }
+
+  .big-form__fieldset:nth-of-type(4) .big-form__list {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  .big-form__fieldset:nth-of-type(3) .big-form__list,
+  .big-form__fieldset:nth-of-type(2) .big-form__list {
+    justify-content: space-between;
+  }
+
+  .big-form__fieldset:nth-of-type(3) .big-form__item {
+    width: 376px;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item{
+    width: 260px;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:first-of-type {
+    order: 1;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:nth-of-type(2) {
+    order: 4;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:nth-of-type(4) {
+    order: 5;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:nth-of-type(5) {
+    order: 3;
+  }
+
+  .big-form__fieldset:nth-of-type(2) .big-form__item:last-of-type {
+    order: 6;
+  }
+
+  .big-form__button-container {
+    margin-top: 64px;
+  }
+
+  .big-form__text-field {
+    width: 820px;
+    height: 126px;
+  }
+
+  .big-form__required-input {
+    padding-top: 0;
+    display: block;
+    width: 320px;
+    text-align: right;
+  }
+
+  .big-form__required-input--hidden {
+    display: inline;
   }
 }

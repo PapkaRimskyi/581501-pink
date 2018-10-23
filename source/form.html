@@ -192,12 +192,12 @@
         </div>
         <div class="big-form__button-container">
           <button class="big-form__submit button" type="submit">Отправить форму</button>
-          <span class="big-form__required-input"><sup>*</sup> &mdash; Обязательные поля</span>
+          <span class="big-form__required-input"><sup>*</sup> &mdash; Обязательные<span class="big-form__required-input big-form__required-input--hidden"> для заполнения</span> поля</span>
         </div>
       </form>
     </section>
   </main>
-  <footer class="pink-footer">
+  <footer class="pink-footer pink-footer--padding-top">
     <div class="pink-footer__container">
       <section class="pink-footer__logo">
         <a class="pink-footer__link">
@@ -209,7 +209,7 @@
       </section>
       <section class="pink-footer__social social-contacts">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-contacts__list">
+        <ul class="social-contacts__list social-contacts__list--padding-left">
           <li class="social-contacts__item">
             <a class="social-contacts__link" href="#">
               <span class="visually-hidden">Twitter</span>
@@ -254,15 +254,15 @@
       <p class="form-popup__main-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
     </div>
     <div class="form-popup__button-container form-popup__button-container--bg">
-      <button class="form-popup__button button button--green" type="button">Закрыть окно</button>
+      <button class="form-popup__button form-popup__button--width-desktop button button--green" type="button">Закрыть окно</button>
     </div>
   </section>
   <section class="form-popup">
     <div class="form-popup__wrapper container-margin">
       <p class="form-popup__header">Что-то пошло не так!</p>
-      <p class="form-popup__main-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <p class="form-popup__main-text form-popup__main-text--desktop-padding">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
-    <div class="form-popup__button-container">
+    <div class="form-popup__button-container form-popup__button-container--desktop-bg">
       <button class="form-popup__button button button--green" type="button">Ок</button>
     </div>
   </section>

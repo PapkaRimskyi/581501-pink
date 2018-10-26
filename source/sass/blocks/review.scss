@@ -31,6 +31,8 @@
   font-weight: 700;
   font-style: normal;
   line-height: 30px;
+  text-align: center;
+  word-break: break-word;
   color: #000000;
 }
 
@@ -44,6 +46,7 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  word-break: break-word;
 }
 
 .review__slider-container {
@@ -66,6 +69,7 @@
   }
 
   .review__text {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
     order: 1;
@@ -77,6 +81,7 @@
   }
 
   .review__author-years-job {
+    margin-top: 3px;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -141,7 +146,7 @@
   }
 
   .review__text-container {
-    width: 685px;
+    width: 688px;
   }
 
   .review .review__slider-container {

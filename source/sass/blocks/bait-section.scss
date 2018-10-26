@@ -9,6 +9,7 @@
   width: 245px;
   font-size: 14px;
   text-align: center;
+  word-break: break-word;
 }
 
 .bait-section__paragraph--width {
@@ -45,6 +46,7 @@
   }
 
   .bait-section__paragraph--form-hidden {
+    padding: 0;
     display: inline;
   }
 }

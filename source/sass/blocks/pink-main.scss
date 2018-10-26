@@ -33,17 +33,24 @@
 
 .attachment__list-os {
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
   padding: 0;
   width: 205px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .attachment__item-os {
+  margin-bottom: 5px;
   width: 47px;
+}
+
+.attachment__item-os:nth-child(3n+2) {
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
 .attachment__link--app-store,
@@ -52,6 +59,7 @@
   width: 47px;
   height: 56px;
   display: flex;
+  justify-content: flex-start;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -81,6 +89,7 @@
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .attachment__button:hover {
@@ -101,11 +110,11 @@
     padding: 10px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 700px 545px, 1200px 729px;
     background-position: bottom center, center bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-size: 700px 545px, 1200px 729px;
     }
   }
 
@@ -128,6 +137,7 @@
     line-height: 48px;
     color: #ffffff;
     text-align: center;
+    word-break: break-word;
   }
 
   .attachment__button {
@@ -136,10 +146,11 @@
     border-radius: 30px;
     font-weight: 700;
     letter-spacing: 0;
+    word-break: break-word;
   }
 
   .attachment__list-os {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
   }
 
   .attachment__compatibility {
@@ -158,15 +169,16 @@
     padding-bottom: 25px;
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-position: right bottom, center bottom;
+    background-size: 1050px 645px, 2560px 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1050px 645px, 2560px 853px;
     }
   }
 
   .attachment__download {
     padding-top: 0;
+    padding-bottom: 96px;
     padding-left: 118px;
     width: 305px;
   }
@@ -189,6 +201,6 @@
   }
 
   .attachment__list-os {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 }

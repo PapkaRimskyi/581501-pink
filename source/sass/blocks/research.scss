@@ -36,7 +36,7 @@
     background-size: cover;
     text-align: center;
     font-size: 96px;
-    line-height: 180px;
+    line-height: 190px;
     color: #d22856;
     font-weight: 700;
   }
@@ -51,18 +51,21 @@
   }
 
   .research__paragraph-caption {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     width: 170px;
     font-size: 30px;
     font-weight: 700;
-    line-height: 33px;
+    line-height: 35px;
     color: #000000;
     text-align: left;
+    word-break: break-word;
   }
 
   .research__paragraph {
-    width: 298px;
+    margin: 0;
     margin-bottom: 11px;
+    width: 298px;
+    word-break: break-word;
   }
 
   .research__paragraph-link {
@@ -73,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .advantages .research {
     margin: 0 auto;
-    padding-top: 87px;
+    padding-top: 84px;
     padding-bottom: 115px;
     width: 900px;
     background-color: #f2f2f2;
@@ -114,15 +117,15 @@
   }
 
   .research__paragraph-caption {
-    margin-bottom: 8px;
+    margin-bottom: 23px;
     width: 300px;
   }
 
   .research__paragraph {
-    margin-bottom: 38px;
-    width: 520px;
+    margin-bottom: 34px;
+    width: 526px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
   }
 
   .research__paragraph-link {

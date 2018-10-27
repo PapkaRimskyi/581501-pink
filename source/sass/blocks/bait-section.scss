@@ -9,12 +9,22 @@
   width: 245px;
   font-size: 14px;
   text-align: center;
+  word-break: break-word;
 }
 
 .bait-section__paragraph--width {
   width: 256px;
   padding-top: 23px;
   padding-bottom: 42px;
+}
+
+.bait-section__paragraph--form-width {
+  padding-bottom: 34px;
+  width: 280px;
+}
+
+.bait-section__paragraph--form-hidden {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,6 +39,16 @@
     padding-top: 45px;
     padding-bottom: 68px;
   }
+
+  .bait-section__paragraph--form-width {
+    padding-bottom: 70px;
+    width: 496px;
+  }
+
+  .bait-section__paragraph--form-hidden {
+    padding: 0;
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -39,5 +59,11 @@
 
   .bait-section__paragraph--width {
     padding-top: 6px;
+    padding-bottom: 66px;
+  }
+
+  .bait-section__paragraph--form-width {
+    padding-bottom: 75px;
+    width: 758px;
   }
 }

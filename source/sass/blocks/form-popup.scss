@@ -1,0 +1,146 @@
+.form-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #ffffff;
+  box-shadow: -5px 5px 15px 0 #dfdfdf;
+  z-index: 1000;
+}
+
+.form-popup--success {
+  top: 20%;
+  display: none;
+}
+
+.form-popup--fail {
+  top: 20%;
+  display: none;
+}
+
+.form-popup__wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-popup__header {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  word-break: break-word;
+}
+
+.form-popup__main-text {
+  font-size: 14px;
+  text-align: center;
+  word-break: break-word;
+}
+
+.form-popup__button-container {
+  padding-top: 15px;
+  padding-bottom: 52px;
+}
+
+.form-popup__button-container--bg {
+  margin-top: 15px;
+  padding-top: 45px;
+  background-color: #f2f2f2;
+}
+
+.form-popup__button {
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 0;
+  border: none;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  word-break: break-word;
+}
+
+.form-popup__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form-popup__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .form-popup {
+    margin: auto;
+    width: 460px;
+  }
+
+  .form-popup__wrapper {
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  .form-popup__header {
+    margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    width: 218px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form-popup__main-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form-popup__button-container {
+    padding-top: 21px;
+  }
+
+  .form-popup__button-container--bg {
+    margin-top: 20px;
+    padding-top: 45px;
+  }
+
+  .form-popup__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-popup {
+    width: 780px;
+  }
+
+  .form-popup__wrapper {
+    width: 400px;
+  }
+
+  .form-popup__header {
+    width: 400px;
+  }
+
+  .form-popup__main-text--desktop-padding {
+    padding-bottom: 47px;
+  }
+
+  .form-popup__button--width-desktop {
+    width: 460px;
+  }
+
+  .form-popup__button-container--bg {
+    margin-top: 25px;
+    padding-top: 48px;
+  }
+
+  .form-popup__button-container--desktop-bg {
+    padding-top: 47px;
+    background-color: #f2f2f2;
+  }
+}

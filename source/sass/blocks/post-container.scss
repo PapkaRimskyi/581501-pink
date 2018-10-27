@@ -42,6 +42,7 @@
 .post-container__name-and-time {
   margin: 0;
   line-height: 24px;
+  word-break: break-word;
 }
 
 .post-container__name {
@@ -63,6 +64,7 @@
   width: 240px;
   font-size: 14px;
   line-height: 24px;
+  word-break: break-word;
 }
 
 .post-container__likes {
@@ -73,6 +75,7 @@
   color: #d22856;
   text-transform: uppercase;
   text-decoration: none;
+  word-break: break-word;
 }
 
 .post-container__likes::before {
@@ -98,16 +101,20 @@
     padding: 22px 22px 20px 28px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
   .post-container__comment-container--position {
     min-height: auto;
     position: relative;
     display: block;
+    flex-grow: 0;
   }
 
   .post-container {
     margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
   }
 
   .photo-section .post-container--all-width {
@@ -144,9 +151,11 @@
   .post-container__likes--absolute {
     padding-left: 0;
     padding-right: 32px;
+    width: 110px;
     position: absolute;
-    right: 27px;
+    right: 6px;
     top: 26px;
+    word-break: break-word;
   }
 
   .post-container__likes--absolute::before {
@@ -159,14 +168,21 @@
   .container-margin {
     margin: 0 auto;
     width: 940px;
+    justify-content: center;
   }
 
   .post-container {
     margin-bottom: 54px;
   }
 
+  .post-container:nth-child(3n+2) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .post-container__wrapper-picture {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 

@@ -31,6 +31,8 @@
   font-weight: 700;
   font-style: normal;
   line-height: 30px;
+  text-align: center;
+  word-break: break-word;
   color: #000000;
 }
 
@@ -44,20 +46,13 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  word-break: break-word;
 }
 
 .review__slider-container {
   margin: 0;
   padding-bottom: 43px;
 }
-
-// .review__slider-button:hover {
-//   background-color: rgba(40, 54, 69, 0.6);
-// }
-//
-// .review__slider-button:active {
-//   background-color: rgba(40, 54, 69, 0.1);
-// }
 
 @media (min-width: $tablet-width) {
   .review {
@@ -74,6 +69,7 @@
   }
 
   .review__text {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
     order: 1;
@@ -85,6 +81,7 @@
   }
 
   .review__author-years-job {
+    margin-top: 3px;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -124,6 +121,15 @@
     background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer;
+    opacity: 0.3;
+  }
+
+  .review__button:hover {
+    opacity: 0.6;
+  }
+
+  .review__button:active {
+    opacity: 0.1;
   }
 
   .review__button--previous {
@@ -135,19 +141,12 @@
   }
 
   .review__button-arrow {
-    opacity: 0.3;
-  }
-
-  .review__button-arrow:hover {
-    opacity: 0.6;
-  }
-
-  .review__button-arrow:active {
-    opacity: 0.1;
+    width: 22px;
+    height: 41px;
   }
 
   .review__text-container {
-    width: 685px;
+    width: 688px;
   }
 
   .review .review__slider-container {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Пинк</title>
+  <title>Ваша история</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -57,11 +57,8 @@
     <symbol id="cross">
       <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
     </symbol>
-    <symbol id="arrow-left">
-      <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
-    </symbol>
-    <symbol id="arrow-right">
-      <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+    <symbol id="yes" viewBox="-82.357 4.875 21.698 16.09">
+      <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
     </symbol>
     <symbol id="footer-logo--mobile">
       <g>
@@ -108,7 +105,7 @@
   <header class="pink-header pink-header--bg pink-header--position">
     <nav class="header-nav">
       <div class="header-nav__container">
-        <a class="header-nav__logo-link">
+        <a class="header-nav__logo-link" href="index.html">
           <svg class="header-nav-svg--mobile" width="75" height="22" viewBox="0 0 75 22">
             <use xlink:href="#header-logo--mobile"></use>
           </svg>
@@ -121,21 +118,21 @@
         </a>
         <button class="header-nav__open-button header-nav__open-button--cross header-nav__open-button--desktop-hidden" type="button">
           <span class="visually-hidden">Меню</span>
-          <svg class="header-nav__open-button-icon" width="24" height="24" viewBox="0 0 24 24">
+          <svg class="header-nav__open-button-icon" width="24px" height="24px" viewBox="0 0 24 24">
             <use xlink:href="#cross"></use>
           </svg>
         </button>
       </div>
       <div class="header-nav__menu-container">
         <ul class="header-nav__menu-list">
-          <li class="header-nav__item header-nav__item--active">
-            <a class="header-nav__item-link">Главная</a>
+          <li class="header-nav__item">
+            <a class="header-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__item-link" href="photo.html">Фотографии</a>
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__item-link" href="form.html">Конкурс</a>
+          <li class="header-nav__item header-nav__item--active">
+            <a class="header-nav__item-link">Конкурс</a>
           </li>
           <li class="header-nav__item">
             <a class="header-nav__item-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
@@ -145,175 +142,144 @@
     </nav>
   </header>
   <main class="pink-main">
-    <section class="attachment">
-      <h1 class="visually-hidden">Представляем наше приложение - PINK</h1>
-      <section class="attachment__download container-padding">
-        <p class="attachment__paragraph attachment__paragraph--hidden-mobile">Взгляните на жизнь иначе!</p>
-        <a class="attachment__button button" href="https://www.apple.com/ru/itunes/" target="_blank">Скачать приложение</a>
-        <ul class="attachment__list-os">
-          <li class="attachment__item-os">
-            <a class="attachment__link attachment__link--app-store" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
-              <span class="visually-hidden">App-Store</span>
-            </a>
-          </li>
-          <li class="attachment__item-os">
-            <a class="attachment__link attachment__link--android" href="https://play.google.com/store" target="_blank">
-              <span class="visually-hidden">Google Store</span>
-            </a>
-          </li>
-          <li class="attachment__item-os">
-            <a class="attachment__link attachment__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" target="_blank">
-              <span class="visually-hidden">Windows Store</span>
-            </a>
-          </li>
-        </ul>
-        <p class="attachment__compatibility">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+    <section class="page-headline">
+      <h1 class="page-headline__header page-headline__header--form-width">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-    <section class="advantages">
-      <section class="advantages__offer">
-        <p class="advantages__paragraph">Устали от серости мегаполиса?</p>
-        <p class="advantages__paragraph">Нам есть, что вам предложить!</p>
-      </section>
-      <section class="advantages__causes">
-        <h2 class="visually-hidden">Причины скачать наше приложение!</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__item-caption">Поднимает настроение</h3>
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-caption">Меняет мир вокруг</h3>
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item-caption">Заводит новых друзей</h3>
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </li>
-        </ul>
-      </section>
-      <section class="research container-padding">
-        <div class="research__text-container">
-          <h3 class="research__paragraph-caption">Эффект на&nbsp;24 часа!</h3>
-          <p class="research__paragraph">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
-          <a class="research__paragraph-link" href="#">Узнать больше об исследовании</a>
+    <section class="bait-section">
+      <p class="bait-section__paragraph bait-section__paragraph--form-width">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!<span class="bait-section__paragraph bait-section__paragraph--form-hidden"> Пожалуйста, заполните форму ниже:</span></p>
+    </section>
+    <section class="big-form">
+      <h2 class="visually-hidden">Раздел заполнения формы</h2>
+      <form class="big-form__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="big-form__fieldset-order-container">
+          <fieldset class="big-form__fieldset">
+            <div class="big-form__fieldset-wrapper">
+              <ul class="big-form__list">
+                <li class="big-form__item">
+                  <label class="big-form__info" for="last-name">Фамилия:</label>
+                  <input class="big-form__input-info" type="text" name="last-name" placeholder="Укажите фамилию *" pattern="^[А-Яа-яЁё\s]+$" id="last-name" required>
+                </li>
+                <li class="big-form__item">
+                  <label class="big-form__info" for="first-name">Имя:</label>
+                  <input class="big-form__input-info" type="text" name="first-name" placeholder="Введите ваше имя *" pattern="^[А-Яа-яЁё\s]+$" id="first-name" required>
+                </li>
+                <li class="big-form__item">
+                  <label class="big-form__info" for="patronymic">Отчество:</label>
+                  <input class="big-form__input-info" type="text" name="patronymic" placeholder="Ну и отчество тоже" pattern="^[А-Яа-яЁё\s]+$" id="patronymic">
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="big-form__fieldset big-form__fieldset--bg">
+            <legend class="big-form__legend">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
+            <div class="big-form__fieldset-wrapper big-form__fieldset-wrapper--padding">
+              <ul class="big-form__list">
+                <li class="big-form__item big-form__item--toggle-margin">
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="selfi" id="selfi-with-shark-id" checked>
+                    <span class="big-form__text big-form__text--checkbox">Сделал селфи с акулой</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="beach" id="beach-id" checked>
+                    <span class="big-form__text big-form__text--checkbox">Обгорел на пляже</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="big-form__item big-form__item--toggle-margin big-form__item--padding-left">
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="saw-norris" id="saw-norris-id">
+                    <span class="big-form__text big-form__text--checkbox">Видел Чака Норриса</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="bought-souvenirs" id="bought-souvenirs-id">
+                    <span class="big-form__text big-form__text--checkbox">Накупил сувениров</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="big-form__item big-form__item--toggle-margin big-form__item--width">
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="held-the-tower" id="held-the-tower-id" checked>
+                    <span class="big-form__text big-form__text--checkbox">Удержал башню</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                  <label class="big-form__label-toggle">
+                    <input class="big-form__input-toggle visually-hidden" type="checkbox" name="destroyed-the-hotel" id="destroyed-the-hotel-id">
+                    <span class="big-form__text big-form__text--checkbox">Разгромил отель</span>
+                    <svg class="big-form__input-toggle-yes big-form__input-toggle-yes--hidden" width="22" height="16" viewBox="0 0 21.698 16.09">
+                      <use xlink:href="#yes"></use>
+                    </svg>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="big-form__fieldset">
+            <legend class="big-form__legend big-form__legend--mobile-hidden">Контактная информация</legend>
+            <div class="big-form__fieldset-wrapper big-form__fieldset-wrapper--padding-top">
+              <ul class="big-form__list">
+                <li class="big-form__item big-form__item--column">
+                  <label class="big-form__info" for="your-number">Номер телефона</label>
+                  <input class="big-form__input-info" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{5,12}" id="your-number">
+                </li>
+                <li class="big-form__item big-form__item--column">
+                  <label class="big-form__info" for="your-email">Адрес почты</label>
+                  <input class="big-form__input-info" type="email" name="email" placeholder="Введите почту *" id="your-email" required>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="big-form__fieldset big-form__fieldset--bg">
+            <legend class="big-form__legend">С каким приложением путешествовали?</legend>
+            <div class="big-form__fieldset-wrapper big-form__fieldset-wrapper--radio-padding">
+              <ul class="big-form__list">
+                <li class="big-form__item big-form__item--radio-margin">
+                  <label class="big-form__label-toggle big-form__label-toggle--radio-padding">
+                    <input class="big-form__input-toggle visually-hidden" type="radio" name="application-filter" value="Pink for iOS" id="for-ios-id" checked>
+                    <span class="big-form__text big-form__text--radio">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="big-form__item big-form__item--radio-margin">
+                  <label class="big-form__label-toggle big-form__label-toggle--radio-padding">
+                    <input class="big-form__input-toggle visually-hidden" type="radio" name="application-filter" value="Pink for Android" id="for-android-id">
+                    <span class="big-form__text big-form__text--radio">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="big-form__item big-form__item--radio-margin">
+                  <label class="big-form__label-toggle big-form__label-toggle--radio-padding">
+                    <input class="big-form__input-toggle visually-hidden" type="radio" name="application-filter" value="Pink for Windows Phone" id="for-winphone-id">
+                    <span class="big-form__text big-form__text--radio">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="big-form__fieldset">
+            <legend class="big-form__legend big-form__legend--bg">Опишите свои эмоции</legend>
+            <div class="big-form__field-container">
+              <textarea class="big-form__text-field" name="comment" rows="5" cols="25" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
         </div>
-      </section>
-    </section>
-    <section class="review">
-      <div class="review__container container-padding">
-        <button class="review__button review__button--previous" type="button">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-          <svg class="review__button-arrow" width="22" height="42" viewBox="0 0 22 42">
-            <use xlink:href="#arrow-left"></use>
-          </svg>
-        </button>
-        <div class="review__text-container">
-          <cite class="review__author">Николай Петров<span class="review__author-years-job"> 25 лет, водитель трамвая</span></cite>
-          <blockquote class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</blockquote>
+        <div class="big-form__button-container">
+          <button class="big-form__submit button" type="submit">Отправить форму</button>
+          <span class="big-form__required-input"><sup>*</sup> &mdash; Обязательные<span class="big-form__required-input big-form__required-input--hidden"> для заполнения</span> поля</span>
         </div>
-        <div class="review__text-container review__text-container--hidden">
-          <cite class="review__author">Иван Иванов<span class="review__author-years-job"> 20 лет, космонавт</span></cite>
-          <blockquote class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</blockquote>
-        </div>
-        <div class="review__text-container review__text-container--hidden">
-          <cite class="review__author">Петр Иванов<span class="review__author-years-job"> 19 лет, студент</span></cite>
-          <blockquote class="review__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</blockquote>
-        </div>
-        <p class="review__slider-container slider">
-          <a class="review__slider-button slider__button slider__button--active" href="#">
-            <span class="visually-hidden">Первый отзыв</span>
-          </a>
-          <a class="review__slider-button slider__button" href="#">
-            <span class="visually-hidden">Второй отзыв</span>
-          </a>
-          <a class="review__slider-button slider__button" href="#">
-            <span class="visually-hidden">Третий отзыв</span>
-          </a>
-        </p>
-        <button class="review__button review__button--next" type="button">
-          <span class="visually-hidden">Следующий отзыв</span>
-          <svg class="review__button-arrow" width="22" height="42" viewBox="0 0 22 42">
-            <use xlink:href="#arrow-right"></use>
-          </svg>
-        </button>
-      </div>
-    </section>
-    <section class="tariff">
-      <div class="tariff__container">
-        <table class="tariff__table">
-          <tr class="tariff__row">
-            <th class="tariff__name tariff__name--hidden"></th>
-            <th class="tariff__name">
-              <p class="tariff__name-paragraph">База <span class="tariff__name-price">1,99 usd</span></p>
-            </th>
-            <th class="tariff__name tariff__name--hit">
-              <p class="tariff__name-paragraph">Стандарт <span class="tariff__name-price">3,99 usd</span></p>
-            </th>
-            <th class="tariff__name">
-              <p class="tariff__name-paragraph">Анлим <span class="tariff__name-price">9,99 usd</span></p>
-            </th>
-          </tr>
-          <tr class="tariff__row">
-            <td class="tariff__status-item tariff__status-item--mobile-hidden">Розовый фильтр</td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Розовый фильтр</span></td>
-          </tr>
-          <tr class="tariff__row">
-            <td class="tariff__status-item tariff__status-item--mobile-hidden">Смайлики</td>
-            <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Смайлики</span></td>
-          </tr>
-          <tr class="tariff__row">
-            <td class="tariff__status-item tariff__status-item--mobile-hidden">Комментарии</td>
-            <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
-            <td class="tariff__status tariff__status--no"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
-            <td class="tariff__status tariff__status--yes"><span class="tariff__status-text tariff__status-text--hidden">Комментарии</span></td>
-          </tr>
-        </table>
-        <p class="tariff__slider-container tariff__slider-container--hidden slider">
-          <a class="tariff__slider-button slider__button" href="#">
-            <span class="visually-hidden">Первый слайд</span>
-          </a>
-          <a class="tariff__slider-button slider__button slider__button--active" href="#">
-            <span class="visually-hidden">Второй слайд</span>
-          </a>
-          <a class="tariff__slider-button slider__button" href="#">
-            <span class="visually-hidden">Третий слайд</span>
-          </a>
-        </p>
-      </div>
-    </section>
-    <section class="contacts">
-      <div class="contacts__container">
-        <p class="contacts__paragraph">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <span class="contacts__item-header">Звоните:</span>
-            <a class="contacts__item-link" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-          </li>
-          <li class="contacts__item">
-            <span class="contacts__item-header">Пишите:</span>
-            <a class="contacts__item-link contacts__item-link--modified" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-          <li class="contacts__item contacts__item--margin-bottom">
-            <span class="contacts__item-header">Приезжайте в гости:</span>
-            <span class="contacts__item-link">ул. Большая <br>Конюшенная, 19/8</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="map">
-      <picture>
-        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="map__item" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Логотип PINK">
-      </picture>
+      </form>
     </section>
   </main>
-  <footer class="pink-footer pink-footer--hidden-index">
+  <footer class="pink-footer pink-footer--padding-top">
     <div class="pink-footer__container">
       <section class="pink-footer__logo">
         <a class="pink-footer__link">
@@ -327,7 +293,7 @@
       </section>
       <section class="pink-footer__social social-contacts">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-contacts__list">
+        <ul class="social-contacts__list social-contacts__list--padding-left">
           <li class="social-contacts__item">
             <a class="social-contacts__link" href="#">
               <span class="visually-hidden">Twitter</span>
@@ -366,5 +332,23 @@
       </section>
     </div>
   </footer>
+  <section class="form-popup form-popup--success">
+    <div class="form-popup__wrapper container-margin">
+      <p class="form-popup__header">Ваша заявка отправлена</p>
+      <p class="form-popup__main-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+    </div>
+    <div class="form-popup__button-container form-popup__button-container--bg">
+      <button class="form-popup__button form-popup__button--width-desktop button button--green" type="button">Закрыть окно</button>
+    </div>
+  </section>
+  <section class="form-popup form-popup--fail">
+    <div class="form-popup__wrapper container-margin">
+      <p class="form-popup__header">Что-то пошло не так!</p>
+      <p class="form-popup__main-text form-popup__main-text--desktop-padding">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="form-popup__button-container form-popup__button-container--desktop-bg">
+      <button class="form-popup__button button button--green" type="button">Ок</button>
+    </div>
+  </section>
 </body>
 </html>

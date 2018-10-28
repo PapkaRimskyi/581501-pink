@@ -206,10 +206,15 @@
   }
 
   .header-nav__item {
+    margin-right: 50px;
     display: flex;
     width: auto;
     border: none;
     justify-content: center;
+  }
+
+  .header-nav__item:nth-child(4n) {
+    margin-right: 0;
   }
 
   .header-nav__item--active {

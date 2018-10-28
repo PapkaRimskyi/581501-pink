@@ -157,7 +157,7 @@
   border-color: #d22856;
 }
 
-
+.big-form__input-toggle:active ~ .big-form__input-toggle-yes,
 .big-form__input-toggle:checked ~ .big-form__input-toggle-yes {
   position: absolute;
   top: calc(50% - (64px / 2));
@@ -188,8 +188,25 @@
 }
 
 .big-form__input-toggle:active + .big-form__text--radio::before,
-.big-form__input-toggle:checked:active + .big-form__text--radio::before {
+.big-form__input-toggle:checked:active + .big-form__text--radio::before,
+.big-form__text-field:focus,
+.big-form__text-field:hover {
   border-color: #d22856;
+}
+
+.big-form__input-toggle:active + .big-form__text--radio::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - (30px / 2));
+  top: -5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border-color: #d22856;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 0;
 }
 
 .big-form__input-toggle:checked + .big-form__text--radio::after {
@@ -416,11 +433,11 @@
     background-color: #e5e5e5;
   }
 
-  .big-form__item--column:first-of-type::before {
+  .big-form__item--telephone::before {
     background-image: url("../img/icon-phone.svg");
   }
 
-  .big-form__item--column:last-of-type::before {
+  .big-form__item--mail::before {
     background-image: url("../img/icon-mail.svg");
   }
 
@@ -436,6 +453,7 @@
     align-items: flex-start;
   }
 
+  .big-form__input-toggle:active ~ .big-form__input-toggle-yes,
   .big-form__input-toggle:checked ~ .big-form__input-toggle-yes {
     position: absolute;
     top: calc(50% - (62px / 2));
@@ -482,6 +500,7 @@
     margin: 0 auto;
     width: 940px;
     justify-content: space-between;
+    align-items: center;
   }
 
   .big-form__fieldset:first-of-type,
@@ -524,6 +543,10 @@
     margin-bottom: 13px;
   }
 
+  .big-form__item--column:nth-child(-2n+3) {
+    margin-right: 68px;
+  }
+
   .big-form__item--toggle-margin {
     margin-bottom: 9px;
   }
@@ -542,7 +565,7 @@
   }
 
   .big-form__fieldset:nth-of-type(3) .big-form__list {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .big-form__fieldset:nth-of-type(2) .big-form__list {

@@ -106,13 +106,13 @@
     <nav class="header-nav">
       <div class="header-nav__container">
         <a class="header-nav__logo-link" href="index.html">
-          <svg class="header-nav-svg--mobile" width="75" height="22" viewBox="0 0 75 22">
+          <svg class="header-nav-svg header-nav-svg--mobile" width="75" height="22" viewBox="0 0 75 22">
             <use xlink:href="#header-logo--mobile"></use>
           </svg>
-          <svg class="header-nav-svg--tablet" width="147" height="40" viewBox="0 0 147 40">
+          <svg class="header-nav-svg header-nav-svg--tablet" width="147" height="40" viewBox="0 0 147 40">
             <use xlink:href="#header-logo--tablet"></use>
           </svg>
-          <svg class="header-nav-svg--desktop" width="147" height="40" viewBox="0 0 147 40">
+          <svg class="header-nav-svg header-nav-svg--desktop" width="147" height="40" viewBox="0 0 147 40">
             <use xlink:href="#header-logo--desktop"></use>
           </svg>
         </a>
@@ -162,6 +162,10 @@
                 <li class="big-form__item">
                   <label class="big-form__info" for="first-name">Имя:</label>
                   <input class="big-form__input-info" type="text" name="first-name" placeholder="Введите ваше имя *" pattern="^[А-Яа-яЁё\s]+$" id="first-name" required>
+                </li>
+                <li class="big-form__item">
+                  <label class="big-form__info" for="patronymic">Отчество:</label>
+                  <input class="big-form__input-info" type="text" name="patronymic" placeholder="Ну и отчество тоже" pattern="^[А-Яа-яЁё\s]+$" id="patronymic">
                 </li>
                 <li class="big-form__item">
                   <label class="big-form__info" for="patronymic">Отчество:</label>
@@ -229,11 +233,11 @@
             <legend class="big-form__legend big-form__legend--mobile-hidden">Контактная информация</legend>
             <div class="big-form__fieldset-wrapper big-form__fieldset-wrapper--padding-top">
               <ul class="big-form__list">
-                <li class="big-form__item big-form__item--column">
+                <li class="big-form__item big-form__item--column big-form__item--telephone">
                   <label class="big-form__info" for="your-number">Номер телефона</label>
                   <input class="big-form__input-info" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{5,12}" id="your-number">
                 </li>
-                <li class="big-form__item big-form__item--column">
+                <li class="big-form__item big-form__item--column big-form__item--mail">
                   <label class="big-form__info" for="your-email">Адрес почты</label>
                   <input class="big-form__input-info" type="email" name="email" placeholder="Введите почту *" id="your-email" required>
                 </li>
@@ -273,7 +277,7 @@
           </fieldset>
         </div>
         <div class="big-form__button-container">
-          <button class="big-form__submit button" type="submit">Отправить форму</button>
+          <button class="big-form__submit button button--disabled" type="submit">Отправить форму</button>
           <span class="big-form__required-input"><sup>*</sup> &mdash; Обязательные<span class="big-form__required-input big-form__required-input--hidden"> для заполнения</span> поля</span>
         </div>
       </form>
@@ -282,11 +286,11 @@
   <footer class="pink-footer pink-footer--padding-top">
     <div class="pink-footer__container">
       <section class="pink-footer__logo">
-        <a class="pink-footer__link">
-          <svg class="pink-footer-svg--mobile" width="147" height="40" viewBox="0 0 147 40">
+        <a class="pink-footer__link" href="index.html">
+          <svg class="pink-footer-svg pink-footer-svg--mobile" width="147" height="40" viewBox="0 0 147 40">
             <use xlink:href="#footer-logo--mobile"></use>
           </svg>
-          <svg class="pink-footer-svg--desktop" width="147" height="40" viewBox="0 0 147 40">
+          <svg class="pink-footer-svg pink-footer-svg--desktop" width="147" height="40" viewBox="0 0 147 40">
             <use xlink:href="#footer-logo--desktop"></use>
           </svg>
         </a>

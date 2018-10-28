@@ -135,6 +135,7 @@
 
 .photo-settings__sending-button--submit:active {
   color: rgba(255, 255, 255, 0.3);
+  background-color: #d22856;
 }
 
 .photo-settings__sending-button--cancel:hover {
@@ -143,8 +144,9 @@
 }
 
 .photo-settings__sending-button--cancel:active {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #283645;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

@@ -35,6 +35,7 @@
 }
 
 .post-container__comment-container {
+  width: 240px;
   padding: 15px 22px 20px 18px;
   background-color: #f2f2f2;
 }
@@ -46,16 +47,19 @@
 }
 
 .post-container__name {
+  max-width: 100%;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
   line-height: 24px;
+  word-break: break-word;
 }
 
 .post-container__time {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+  word-break: break-word;
 }
 
 .post-container__comment {
@@ -97,6 +101,7 @@
   }
 
   .post-container__comment-container {
+    width: 250px;
     min-height: 112px;
     padding: 22px 22px 20px 28px;
     display: flex;

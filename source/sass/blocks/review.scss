@@ -43,6 +43,7 @@
 .review__text {
   margin: 0;
   margin-bottom: 33px;
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -70,6 +71,7 @@
 
   .review__text {
     margin-bottom: 30px;
+    width: 620px;
     font-size: 18px;
     line-height: 30px;
     order: 1;
@@ -145,7 +147,8 @@
     height: 41px;
   }
 
-  .review__text-container {
+  .review__text-container,
+  .review__text {
     width: 688px;
   }
 

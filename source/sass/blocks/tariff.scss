@@ -19,6 +19,10 @@
   background-size: 100% 100%;
 }
 
+.tariff__container {
+  width: 320px;
+}
+
 .tariff__table {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -26,6 +30,19 @@
   line-height: 30px;
   text-transform: uppercase;
   border-color: #e5e5e5;
+  transform: translateX(-257px);
+}
+
+.tariff__table-button1 {
+  transform: translateX(0);
+}
+
+.tariff__table-button2 {
+  transform: translateX(-257px);
+}
+
+.tariff__table-button3 {
+  transform: translateX(-514px);
 }
 
 .tariff__name {
@@ -133,9 +150,14 @@
     background-size: contain;
   }
 
+  .tariff__container {
+    width: 620px;
+  }
+
   .tariff__table {
     width: 620px;
     font-size: 16px;
+    transform: translateX(0);
   }
 
   .tariff__name {
@@ -225,6 +247,7 @@
   }
 
   .tariff__container {
+    width: 940px;
     padding-top: 70px;
   }
 

@@ -47,6 +47,10 @@
   word-break: break-word;
 }
 
+.contacts__item-link--modified {
+  border-bottom: 1px solid transparent;
+}
+
 .contacts__item-link--modified:hover {
   color: #283645;
   border-bottom: 1px solid #283645;
@@ -85,14 +89,14 @@
   }
 
   .contacts__item {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     width: 242px;
     align-items: center;
     flex-grow: 1;
   }
 
   .contacts__item--margin-bottom {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
   }
 
   .contacts__item-header {

@@ -8,15 +8,9 @@ var tariff_table = document.querySelector(".tariff__table");
 tariff_button1.addEventListener("click", function(evt) {
   evt.preventDefault();
   tariff_table.classList.remove("tariff__table-button2");
+  tariff_table.classList.remove("tariff__table-button2");
   tariff_table.classList.add("tariff__table-button1");
   tariff_button2.classList.remove("slider__button--active");
-  tariff_button1.classList.add("slider__button--active");
-});
-
-tariff_button1.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  tariff_table.classList.remove("tariff__table-button3");
-  tariff_table.classList.add("tariff__table-button1");
   tariff_button3.classList.remove("slider__button--active");
   tariff_button1.classList.add("slider__button--active");
 });
@@ -24,31 +18,19 @@ tariff_button1.addEventListener("click", function(evt) {
 tariff_button2.addEventListener("click", function(evt) {
   evt.preventDefault();
   tariff_table.classList.remove("tariff__table-button1");
-  tariff_table.classList.add("tariff__table-button2");
-  tariff_button1.classList.remove("slider__button--active");
-  tariff_button2.classList.add("slider__button--active");
-});
-
-tariff_button2.addEventListener("click", function(evt) {
-  evt.preventDefault();
   tariff_table.classList.remove("tariff__table-button3");
   tariff_table.classList.add("tariff__table-button2");
+  tariff_button1.classList.remove("slider__button--active");
   tariff_button3.classList.remove("slider__button--active");
   tariff_button2.classList.add("slider__button--active");
 });
 
 tariff_button3.addEventListener("click", function(evt) {
   evt.preventDefault();
+  tariff_table.classList.remove("tariff__table-button1");
   tariff_table.classList.remove("tariff__table-button2");
   tariff_table.classList.add("tariff__table-button3");
-  tariff_button2.classList.remove("slider__button--active");
-  tariff_button3.classList.add("slider__button--active");
-});
-
-tariff_button3.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  tariff_table.classList.remove("tariff__table-button1");
-  tariff_table.classList.add("tariff__table-button3");
   tariff_button1.classList.remove("slider__button--active");
+  tariff_button2.classList.remove("slider__button--active");
   tariff_button3.classList.add("slider__button--active");
 });

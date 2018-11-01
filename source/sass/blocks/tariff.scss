@@ -11,12 +11,12 @@
   position: absolute;
   content: "";
   top: 0;
-  right: 10px;
+  right: 0;
   width: 320px;
   height: 24px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .tariff__container {
@@ -147,7 +147,7 @@
   .tariff::before {
     width: 660px;
     height: 50px;
-    background-size: contain;
+    background-size: cover;
   }
 
   .tariff__container {

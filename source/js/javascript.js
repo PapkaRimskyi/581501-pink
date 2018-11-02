@@ -14,76 +14,125 @@ var review_container2 = document.querySelector(".review__text-container2");
 var review_container3 = document.querySelector(".review__text-container3");
 var arrow_left = document.querySelector(".review__button--previous");
 var arrow_right = document.querySelector(".review__button--next");
+var pink_header = document.querySelector(".pink-header");
+var header_nav_container = document.querySelector(".header-nav__container");
+var header_nav_menu_container = document.querySelector(".header-nav__menu-container");
+var icon_cross = document.querySelector(".header-nav__open-button-svg--cross");
+var icon_burger = document.querySelector(".header-nav__open-button-svg--burger");
+var header_button = document.querySelector(".header-nav__open-button");
+var attachment = document.querySelector(".attachment");
+var page_headline = document.querySelector(".page-headline");
 var big_form = document.querySelector(".big-form__form");
 var first_name = document.querySelector("[name=first-name]");
 var last_name = document.querySelector("[name=last-name]");
 var email = document.querySelector("[name=email]");
 var form_popup_fail = document.querySelector(".form-popup--fail");
+var form_popup_fail_button = document.querySelector(".form-popup--fail-button");
 
-tariff_button1.addEventListener("click", function(evt) {
+pink_header.classList.add("pink-header--position");
+header_nav_container.classList.add("header-nav__container--border");
+header_nav_menu_container.classList.add("header-nav__menu-container--hidden");
+icon_cross.classList.add("header-nav__open-button-svg--hidden");
+icon_burger.classList.remove("header-nav__open-button-svg--hidden");
+if (attachment) {
+  attachment.classList.add("attachment--padding-top");
+}
+if (page_headline) {
+  page_headline.classList.add("page-headline--padding-top");
+}
+
+header_button.addEventListener("click", function(evt) {
   evt.preventDefault();
-  tariff_table.classList.remove("tariff__table-button2");
-  tariff_table.classList.remove("tariff__table-button3");
-  tariff_table.classList.add("tariff__table-button1");
-  tariff_button2.classList.remove("slider__button--active");
-  tariff_button3.classList.remove("slider__button--active");
-  tariff_button1.classList.add("slider__button--active");
-});
-
-tariff_button2.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  tariff_table.classList.remove("tariff__table-button1");
-  tariff_table.classList.remove("tariff__table-button3");
-  tariff_table.classList.add("tariff__table-button2");
-  tariff_button1.classList.remove("slider__button--active");
-  tariff_button3.classList.remove("slider__button--active");
-  tariff_button2.classList.add("slider__button--active");
-});
-
-tariff_button3.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  tariff_table.classList.remove("tariff__table-button1");
-  tariff_table.classList.remove("tariff__table-button2");
-  tariff_table.classList.add("tariff__table-button3");
-  tariff_button1.classList.remove("slider__button--active");
-  tariff_button2.classList.remove("slider__button--active");
-  tariff_button3.classList.add("slider__button--active");
-});
-
-review_button1.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  review_container2.classList.add("review__text-container--hidden");
-  review_container3.classList.add("review__text-container--hidden");
-  review_container1.classList.remove("review__text-container--hidden");
-  review_button2.classList.remove("slider__button--active");
-  review_button3.classList.remove("slider__button--active");
-  review_button1.classList.add("slider__button--active");
-});
-
-review_button2.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  review_container1.classList.add("review__text-container--hidden");
-  review_container3.classList.add("review__text-container--hidden");
-  review_container2.classList.remove("review__text-container--hidden");
-  review_button1.classList.remove("slider__button--active");
-  review_button3.classList.remove("slider__button--active");
-  review_button2.classList.add("slider__button--active");
-});
-
-review_button3.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  review_container1.classList.add("review__text-container--hidden");
-  review_container2.classList.add("review__text-container--hidden");
-  review_container3.classList.remove("review__text-container--hidden");
-  review_button1.classList.remove("slider__button--active");
-  review_button2.classList.remove("slider__button--active");
-  review_button3.classList.add("slider__button--active");
-});
-
-big_form.addEventListener("submit", function(evt) {
-  if (!first_name.value || !last_name.value || !email.value) {
-    evt.preventDefault();
-    form_popup_fail.classList.add("form-popup--display");
-    console.log("Заполните пустые поля");
+  pink_header.classList.toggle("pink-header--position");
+  header_nav_container.classList.toggle("header-nav__container--border");
+  header_nav_menu_container.classList.toggle("header-nav__menu-container--hidden");
+  icon_cross.classList.toggle("header-nav__open-button-svg--hidden");
+  icon_burger.classList.toggle("header-nav__open-button-svg--hidden");
+  if (attachment) {
+    attachment.classList.toggle("attachment--padding-top");
+  }
+  if (page_headline) {
+    page_headline.classList.toggle("page-headline--padding-top");
   }
 });
+
+if(tariff_slider) {
+  tariff_button1.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    tariff_table.classList.remove("tariff__table-button2");
+    tariff_table.classList.remove("tariff__table-button3");
+    tariff_table.classList.add("tariff__table-button1");
+    tariff_button2.classList.remove("slider__button--active");
+    tariff_button3.classList.remove("slider__button--active");
+    tariff_button1.classList.add("slider__button--active");
+  });
+
+  tariff_button2.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    tariff_table.classList.remove("tariff__table-button1");
+    tariff_table.classList.remove("tariff__table-button3");
+    tariff_table.classList.add("tariff__table-button2");
+    tariff_button1.classList.remove("slider__button--active");
+    tariff_button3.classList.remove("slider__button--active");
+    tariff_button2.classList.add("slider__button--active");
+  });
+
+  tariff_button3.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    tariff_table.classList.remove("tariff__table-button1");
+    tariff_table.classList.remove("tariff__table-button2");
+    tariff_table.classList.add("tariff__table-button3");
+    tariff_button1.classList.remove("slider__button--active");
+    tariff_button2.classList.remove("slider__button--active");
+    tariff_button3.classList.add("slider__button--active");
+  });
+}
+
+if(review_slider) {
+  review_button1.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    review_container2.classList.add("review__text-container--hidden");
+    review_container3.classList.add("review__text-container--hidden");
+    review_container1.classList.remove("review__text-container--hidden");
+    review_button2.classList.remove("slider__button--active");
+    review_button3.classList.remove("slider__button--active");
+    review_button1.classList.add("slider__button--active");
+  });
+
+  review_button2.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    review_container1.classList.add("review__text-container--hidden");
+    review_container3.classList.add("review__text-container--hidden");
+    review_container2.classList.remove("review__text-container--hidden");
+    review_button1.classList.remove("slider__button--active");
+    review_button3.classList.remove("slider__button--active");
+    review_button2.classList.add("slider__button--active");
+  });
+
+  review_button3.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    review_container1.classList.add("review__text-container--hidden");
+    review_container2.classList.add("review__text-container--hidden");
+    review_container3.classList.remove("review__text-container--hidden");
+    review_button1.classList.remove("slider__button--active");
+    review_button2.classList.remove("slider__button--active");
+    review_button3.classList.add("slider__button--active");
+  });
+}
+
+if(big_form) {
+  big_form.addEventListener("submit", function(evt) {
+    if (!first_name.value || !last_name.value || !email.value) {
+      evt.preventDefault();
+      form_popup_fail.classList.add("form-popup--display");
+      console.log("Заполните пустые поля");
+    }
+  });
+}
+
+if(form_popup_fail) {
+  form_popup_fail_button.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    form_popup_fail.classList.remove("form-popup--display");
+  });
+}

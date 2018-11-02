@@ -10,6 +10,11 @@
   }
 }
 
+.page-headline--padding-top {
+  padding-top: 68px;
+  background-position: center -2px;
+}
+
 .page-headline__header {
   margin: 0 auto;
   padding-top: 26px;
@@ -39,6 +44,11 @@
     }
   }
 
+  .page-headline--padding-top {
+    padding-top: 113px;
+    background-position: center 1px;
+  }
+
   .page-headline__header {
     padding-top: 70px;
     padding-bottom: 140px;
@@ -62,6 +72,11 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px 853px;
     }
+  }
+
+  .page-headline--padding-top {
+    padding-top: 0;
+    background-position: center -2px;
   }
 
   .page-headline__header {

@@ -45,6 +45,10 @@
     <symbol id="cross">
       <path d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"/>
     </symbol>
+    <symbol id="burger">
+      <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+      <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+    </symbol>
     <symbol id="arrow-left">
       <path d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z"/>
     </symbol>
@@ -110,10 +114,13 @@
             <use xlink:href="#header-logo--desktop"></use>
           </svg>
         </a>
-        <button class="header-nav__open-button header-nav__open-button--cross header-nav__open-button--desktop-hidden" type="button">
+        <button class="header-nav__open-button header-nav__open-button--icon header-nav__open-button--desktop-hidden" type="button">
           <span class="visually-hidden">Меню</span>
-          <svg class="header-nav__open-button-icon header-nav__open-button-icon--hidden" width="24" height="24" viewBox="0 0 24 24">
+          <svg class="header-nav__open-button-svg header-nav__open-button-svg--cross header-nav__open-button-svg--hidden" width="24" height="24" viewBox="0 0 24 24">
             <use xlink:href="#cross"></use>
+          </svg>
+          <svg class="header-nav__open-button-svg header-nav__open-button-svg--burger header-nav__open-button-svg--hidden" width="50" height="24" viewBox="0 0 50 24">
+            <use xlink:href="#burger"></use>
           </svg>
         </button>
       </div>

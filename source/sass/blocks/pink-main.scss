@@ -18,6 +18,11 @@
   }
 }
 
+.attachment--padding-top {
+  padding-top: 460px;
+  background-position: left 180px, center top;
+}
+
 .attachment__download {
   display: flex;
   flex-direction: column;
@@ -117,6 +122,11 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .attachment--padding-top {
+      padding-top: 122px;
+      background-position: center 185px, center top;
   }
 
   .attachment__download {

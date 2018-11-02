@@ -15,6 +15,8 @@
 
 .header-nav__container {
   padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 23px;
   width: 280px;
   display: flex;
   justify-content: space-between;
@@ -63,6 +65,10 @@
 .header-nav__open-button-icon:active {
   fill: #d22856;
   opacity: 0.3;
+}
+
+.header-nav__open-button-icon--hidden {
+  display: none;
 }
 
 .header-nav__menu-list {
@@ -151,18 +157,15 @@
 
 @media (min-width: $desktop-width) {
   .pink-header {
+    position: absolute;
+    left: 0;
+    right: 0;
     width: 100%;
     max-width: 1200px;
   }
 
   .pink-header--bg {
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .pink-header--position {
-    position: absolute;
-    left: 0;
-    right: 0;
   }
 
   .header-nav {

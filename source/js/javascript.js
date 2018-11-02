@@ -14,11 +14,16 @@ var review_container2 = document.querySelector(".review__text-container2");
 var review_container3 = document.querySelector(".review__text-container3");
 var arrow_left = document.querySelector(".review__button--previous");
 var arrow_right = document.querySelector(".review__button--next");
+var big_form = document.querySelector(".big-form__form");
+var first_name = document.querySelector("[name=first-name]");
+var last_name = document.querySelector("[name=last-name]");
+var email = document.querySelector("[name=email]");
+var form_popup_fail = document.querySelector(".form-popup--fail");
 
 tariff_button1.addEventListener("click", function(evt) {
   evt.preventDefault();
   tariff_table.classList.remove("tariff__table-button2");
-  tariff_table.classList.remove("tariff__table-button2");
+  tariff_table.classList.remove("tariff__table-button3");
   tariff_table.classList.add("tariff__table-button1");
   tariff_button2.classList.remove("slider__button--active");
   tariff_button3.classList.remove("slider__button--active");
@@ -73,4 +78,12 @@ review_button3.addEventListener("click", function(evt) {
   review_button1.classList.remove("slider__button--active");
   review_button2.classList.remove("slider__button--active");
   review_button3.classList.add("slider__button--active");
+});
+
+big_form.addEventListener("submit", function(evt) {
+  if (!first_name.value || !last_name.value || !email.value) {
+    evt.preventDefault();
+    form_popup_fail.classList.add("form-popup--display");
+    console.log("Заполните пустые поля");
+  }
 });

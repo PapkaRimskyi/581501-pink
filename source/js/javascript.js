@@ -17,8 +17,6 @@ var arrow_right = document.querySelector(".review__button--next");
 var pink_header = document.querySelector(".pink-header");
 var header_nav_container = document.querySelector(".header-nav__container");
 var header_nav_menu_container = document.querySelector(".header-nav__menu-container");
-var icon_cross = document.querySelector(".header-nav__open-button-svg--cross");
-var icon_burger = document.querySelector(".header-nav__open-button-svg--burger");
 var header_button = document.querySelector(".header-nav__open-button");
 var attachment = document.querySelector(".attachment");
 var page_headline = document.querySelector(".page-headline");
@@ -27,13 +25,13 @@ var first_name = document.querySelector("[name=first-name]");
 var last_name = document.querySelector("[name=last-name]");
 var email = document.querySelector("[name=email]");
 var form_popup_fail = document.querySelector(".form-popup--fail");
-var form_popup_fail_button = document.querySelector(".form-popup--fail-button");
+var form_popup_fail_button = document.querySelector(".form-popup--button-fail");
 
 pink_header.classList.add("pink-header--position");
+header_button.classList.remove("header-nav__open-button--without-script");
+header_button.classList.add("header-nav__open-button--closed");
 header_nav_container.classList.add("header-nav__container--border");
 header_nav_menu_container.classList.add("header-nav__menu-container--hidden");
-icon_cross.classList.add("header-nav__open-button-svg--hidden");
-icon_burger.classList.remove("header-nav__open-button-svg--hidden");
 if (attachment) {
   attachment.classList.add("attachment--padding-top");
 }
@@ -43,11 +41,10 @@ if (page_headline) {
 
 header_button.addEventListener("click", function(evt) {
   evt.preventDefault();
+  header_button.classList.toggle("header-nav__open-button--closed");
   pink_header.classList.toggle("pink-header--position");
   header_nav_container.classList.toggle("header-nav__container--border");
   header_nav_menu_container.classList.toggle("header-nav__menu-container--hidden");
-  icon_cross.classList.toggle("header-nav__open-button-svg--hidden");
-  icon_burger.classList.toggle("header-nav__open-button-svg--hidden");
   if (attachment) {
     attachment.classList.toggle("attachment--padding-top");
   }

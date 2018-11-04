@@ -1,0 +1,201 @@
+.attachment {
+  background-color: #1d2631;
+  padding-top: 395px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left 108px, center -68px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-position: left 107px, center -68px;
+    background-size: 258px 286px, 700px 462px;
+  }
+}
+
+.attachment--padding-top {
+  padding-top: 460px;
+  background-position: left 174px, center -2px;
+}
+
+.attachment__download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: #1d2631;
+}
+
+.attachment__paragraph--hidden-mobile {
+  display: none;
+}
+
+.attachment__list-os {
+  margin: 0 auto;
+  margin-bottom: 17px;
+  padding: 0;
+  width: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.attachment__item-os {
+  margin-bottom: 5px;
+  width: 47px;
+}
+
+.attachment__item-os:nth-child(3n+2) {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.attachment__link--app-store,
+.attachment__link--android,
+.attachment__link--windows {
+  width: 47px;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.attachment__link--app-store {
+  background-image: url("../img/logo-apple.svg");
+  background-position: center center;
+  background-size: 47px 56px;
+}
+
+.attachment__link--android {
+  background-image: url("../img/logo-android.svg");
+  background-position: center bottom;
+  background-size: 43px 47px;
+}
+
+.attachment__link--windows {
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: center 12px;
+  background-size: 44px 41px;
+}
+
+.attachment__compatibility {
+  margin: 0;
+  width: 236px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.attachment__button:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.attachment__button:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .attachment {
+    padding: 10px;
+    padding-top: 13px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 700px 545px, 1200px 729px;
+    background-position: bottom center, center bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .attachment--padding-top {
+      padding-top: 124px;
+      padding-bottom: 9px;
+      background-position: center 185px, center top;
+  }
+
+  .attachment__download {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .attachment__paragraph {
+    margin-bottom: 30px;
+    display: flex;
+    width: 195px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: #ffffff;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .attachment__button {
+    margin-bottom: 45px;
+    width: 300px;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+    word-break: break-word;
+  }
+
+  .attachment__list-os {
+    margin-bottom: 33px;
+  }
+
+  .attachment__compatibility {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attachment {
+    padding-top: 175px;
+    padding-bottom: 25px;
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: right bottom, center bottom;
+    background-size: 1050px 645px, 2560px 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .attachment__download {
+    padding-top: 0;
+    padding-bottom: 96px;
+    padding-left: 118px;
+    width: 305px;
+  }
+
+  .attachment__paragraph {
+    margin-top: 42px;
+    margin-bottom: 52px;
+    width: 260px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .attachment__button {
+    margin-bottom: 66px;
+    font-size: 21px;
+  }
+
+  .attachment__list-os {
+    margin-bottom: 52px;
+  }
+}

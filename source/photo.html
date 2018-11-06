@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фотографии пользователей</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
   <svg style="display: none;">
@@ -41,6 +41,10 @@
           <path fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
         </g>
       </g>
+    </symbol>
+    <symbol id="burger">
+      <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
+      <path d="M1.137 0C.51 0 0 .428 0 1.01v1.981c0 .558.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01V1.01c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.003c-.627 0-1.137.428-1.137 1.01v1.98c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.98c0-.558-.494-1.01-1.138-1.01H1.137zm0 10.002C.51 20.005 0 20.434 0 21.016v1.981c0 .557.494 1.01 1.139 1.01H48.81c.628 0 1.138-.428 1.138-1.01v-1.981c0-.558-.494-1.011-1.138-1.011H1.137z"/>
     </symbol>
     <symbol id="cross">
       <path d="M15.087 11.933l8.56-8.559a.75.75 0 0 0 0-1.061L21.554.22a.747.747 0 0 0-1.06 0l-8.561 8.56L3.373.22a.771.771 0 0 0-1.061 0L.22 2.313a.75.75 0 0 0 0 1.061l8.56 8.559-8.56 8.559a.751.751 0 0 0 0 1.062l2.093 2.094a.744.744 0 0 0 1.06 0l8.561-8.56 8.56 8.56a.746.746 0 0 0 1.06 0l2.093-2.094a.751.751 0 0 0 0-1.062l-8.56-8.559z"/>
@@ -99,7 +103,7 @@
       </g>
     </symbol>
   </svg>
-  <header class="pink-header pink-header--bg pink-header--position">
+  <header class="pink-header pink-header--bg">
     <nav class="header-nav">
       <div class="header-nav__container">
         <a class="header-nav__logo-link" href="index.html">
@@ -113,10 +117,13 @@
             <use xlink:href="#header-logo--desktop"></use>
           </svg>
         </a>
-        <button class="header-nav__open-button header-nav__open-button--cross header-nav__open-button--desktop-hidden" type="button">
+        <button class="header-nav__open-button header-nav__open-button--icon header-nav__open-button--without-script header-nav__open-button--desktop-hidden" type="button">
           <span class="visually-hidden">Меню</span>
-          <svg class="header-nav__open-button-icon" width="24" height="24" viewBox="0 0 24 24">
+          <svg class="header-nav__open-button-svg header-nav__open-button-svg--cross" width="24" height="24" viewBox="0 0 24 24">
             <use xlink:href="#cross"></use>
+          </svg>
+          <svg class="header-nav__open-button-svg header-nav__open-button-svg--burger" width="50" height="24" viewBox="0 0 50 24">
+            <use xlink:href="#burger"></use>
           </svg>
         </button>
       </div>
@@ -132,7 +139,7 @@
             <a class="header-nav__item-link" href="form.html">Конкурс</a>
           </li>
           <li class="header-nav__item">
-            <a class="header-nav__item-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            <a class="header-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -150,14 +157,16 @@
       <section class="post-container post-container--all-width">
         <h2 class="visually-hidden">Панорама дня</h2>
         <div class="post-container__wrapper-picture">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="post-container__picture post-container__picture--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="post-container__picture post-container__picture--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
         </div>
         <div class="post-container__comment-container post-container__comment-container--position container-margin">
           <p class="post-container__name-and-time post-container__name-and-time--width">
@@ -168,17 +177,19 @@
           <a class="post-container__likes post-container__likes--absolute" href="#">Нравится: 215</a>
         </div>
       </section>
-      <div class="container-margin">
+      <div class="container-margin container-margin--user-photo-section">
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Левон</cite>
@@ -190,14 +201,16 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-            <source srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Антон</cite>
@@ -209,14 +222,16 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-            <source srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Борис</cite>
@@ -228,14 +243,16 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-            <source srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Сергей</cite>
@@ -247,14 +264,16 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-            <source srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Максим</cite>
@@ -266,14 +285,16 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-            <source srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-            <img class="post-container__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
-          </picture>
+          <a class="post-container__link-full-size-photo" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="post-container__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            </picture>
+          </a>
           <div class="post-container__comment-container">
             <p class="post-container__name-and-time">
               <cite class="post-container__name">Надежда</cite>
@@ -292,9 +313,9 @@
       <h2 class="visually-hidden">Попробуйте запостить свое фото!</h2>
       <form class="photo-settings__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-          <source srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
           <img class="photo-settings__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваша фотография">
@@ -303,6 +324,7 @@
           <ul class="photo-settings__list">
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--active photo-settings__button--crop" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--crop" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-crop"></use>
                 </svg>
@@ -310,6 +332,7 @@
             </li>
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--fill" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--fill" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-fill"></use>
                 </svg>
@@ -317,6 +340,7 @@
             </li>
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--contrast" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--contrast" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-contrast"></use>
                 </svg>
@@ -326,16 +350,19 @@
           <div class="photo-settings__range">
             <div class="photo-settings__range-container">
               <div class="photo-settings__range-line">
+                <span class="visually-hidden">Ползунок для регулирования</span>
                 <button class="photo-settings__range-button" type="button"></button>
               </div>
             </div>
             <div class="photo-settings__range-container photo-settings__range-container--hidden">
               <div class="photo-settings__range-line">
+                <span class="visually-hidden">Ползунок для регулирования</span>
                 <button class="photo-settings__range-button" type="button"></button>
               </div>
             </div>
             <div class="photo-settings__range-container photo-settings__range-container--hidden">
               <div class="photo-settings__range-line">
+                <span class="visually-hidden">Ползунок для регулирования</span>
                 <button class="photo-settings__range-button" type="button"></button>
               </div>
             </div>
@@ -363,7 +390,7 @@
       </section>
       <section class="pink-footer__social social-contacts">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-contacts__list">
+        <ul class="social-contacts__list social-contacts__list--margin">
           <li class="social-contacts__item">
             <a class="social-contacts__link" href="#">
               <span class="visually-hidden">Twitter</span>
@@ -393,7 +420,7 @@
       <section class="pink-footer__developed">
         <h2 class="visually-hidden">Разработчики нашего сайта</h2>
         <p class="pink-footer__developed-by">Разработано
-          <a class="pink-footer__developer-link" href="https://htmlacademy.ru/">
+          <a class="pink-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Логотип Html Academy</span>
             <svg class="pink-footer__html-logo" width="27" height="34" viewBox="0 0 27 34">
               <use xlink:href="#html-logo"></use>
@@ -404,5 +431,6 @@
     </div>
   </footer>
   <script src="js/picturefill-min.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>

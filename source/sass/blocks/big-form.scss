@@ -25,7 +25,11 @@
 }
 
 .big-form__fieldset-wrapper--padding {
-  padding-top: 45px;
+  padding-top: 43px;
+}
+
+.big-form__fieldset-wrapper--padding-top {
+  padding-top: 2px;
 }
 
 .big-form__fieldset-wrapper--radio-padding {
@@ -339,6 +343,7 @@
   }
 
   .big-form__fieldset:last-of-type {
+    margin-top: 2px;
     margin-bottom: 46px;
     order: 5;
   }
@@ -361,7 +366,7 @@
   }
 
   .big-form__fieldset-wrapper--padding-top {
-    padding-top: 38px;
+    padding-top: 36px;
   }
 
   .big-form__legend {
@@ -471,7 +476,6 @@
 
   .big-form__text-field {
     width: 500px;
-    min-height: 100px;
   }
 
   .big-form__button-container {

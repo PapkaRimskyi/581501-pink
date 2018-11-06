@@ -33,7 +33,7 @@
 .advantages__causes::before {
   content: "";
   position: absolute;
-  top: -5px;
+  top: 0;
   left: 0;
   width: 320px;
   height: 34px;
@@ -63,6 +63,7 @@
 
 .advantages__list {
   margin: 0;
+  margin-right: 2px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -144,6 +145,7 @@
   }
 
   .advantages__list {
+    margin-top: 1px;
     width: 309px;
     justify-content: flex-start;
   }

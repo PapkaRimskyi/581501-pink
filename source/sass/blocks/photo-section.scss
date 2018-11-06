@@ -7,7 +7,7 @@
   margin: 0 20px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .photo-section .container-margin--user-photo-section {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .photo-section .container-margin--user-photo-section {
     margin: 0 auto;
     width: 940px;

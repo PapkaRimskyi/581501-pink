@@ -2,10 +2,6 @@
   margin-bottom: 20px;
 }
 
-.post-container__container-margin {
-  margin: 0 20px;
-}
-
 .post-container--all-width {
   margin-bottom: 20px;
   width: 100%;
@@ -93,11 +89,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .post-container__container-margin {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
   .post-container__comment-container {
     width: 250px;
@@ -171,19 +162,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .post-container__container-margin {
-    margin: 0 auto;
-    width: 940px;
-    justify-content: center;
-  }
 
   .post-container {
     margin-bottom: 54px;
-  }
-
-  .post-container__container-margin .post-container:nth-child(3n+2) {
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .post-container__wrapper-picture {

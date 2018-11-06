@@ -25,7 +25,7 @@ var first_name = document.querySelector("[name=first-name]");
 var last_name = document.querySelector("[name=last-name]");
 var email = document.querySelector("[name=email]");
 var form_popup_fail = document.querySelector(".form-popup--fail");
-var form_popup_fail_button = document.querySelector(".form-popup--button-fail");
+var form_popup_fail_button = document.querySelector(".form-popup__button--fail");
 
 pink_header.classList.add("pink-header--position");
 header_button.classList.remove("header-nav__open-button--without-script");

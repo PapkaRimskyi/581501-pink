@@ -157,7 +157,7 @@
       <section class="post-container post-container--all-width">
         <h2 class="visually-hidden">Панорама дня</h2>
         <div class="post-container__wrapper-picture">
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -180,7 +180,7 @@
       <div class="container-margin container-margin--user-photo-section">
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -201,7 +201,7 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -222,7 +222,7 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -243,7 +243,7 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -264,7 +264,7 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -285,7 +285,7 @@
         </section>
         <section class="post-container">
           <h2 class="visually-hidden">Раздел с фотографией пользователя</h2>
-          <a class="post-container__link--full-size-photo" href="#">
+          <a class="post-container__link-full-size-photo" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -324,6 +324,7 @@
           <ul class="photo-settings__list">
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--active photo-settings__button--crop" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--crop" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-crop"></use>
                 </svg>
@@ -331,6 +332,7 @@
             </li>
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--fill" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--fill" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-fill"></use>
                 </svg>
@@ -338,6 +340,7 @@
             </li>
             <li class="photo-settings__item">
               <button class="photo-settings__button photo-settings__button--contrast" type="button">
+                <span class="visually-hidden">Кнопка фильтра</span>
                 <svg class="photo-settings__icon photo-settings__icon--contrast" width="48" height="48" viewBox="0 0 48 48">
                   <use xlink:href="#button-contrast"></use>
                 </svg>

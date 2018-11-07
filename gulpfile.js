@@ -14,6 +14,7 @@ var rename = require("gulp-rename");
 var svgo = require("svgo");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("js_min", function () {
   return gulp.src("source/js/javascript.js")
@@ -89,7 +90,8 @@ gulp.task("copy", function() {
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("build"));
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series("clean", "copy", "html", "css", "js_min"));

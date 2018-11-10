@@ -95,8 +95,11 @@
 @media (min-width: $desktop-width) {
   .review {
     position: relative;
+    margin: 0 auto;
     padding-top: 185px;
     padding-bottom: 4px;
+    display: flex;
+    justify-content: center;
   }
 
   .review::before {
@@ -112,9 +115,15 @@
 
   .review__container {
     margin: 0 auto;
-    justify-content: space-around;
+    width: 960px;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+  }
+
+  .review__container.container-padding {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   .review__button {
@@ -137,11 +146,13 @@
   }
 
   .review__button--previous {
-    margin-left: 54px;
+    padding-right: 0;
+    padding-left: 8px;
   }
 
   .review__button--next {
-    margin-right: 54px;
+    padding-left: 0;
+    padding-right: 8px;
   }
 
   .review__button-arrow {
